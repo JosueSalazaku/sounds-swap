@@ -1,5 +1,6 @@
 import './bootstrap';
 import '../css/app.css';
+import Header from './Components/Header';
 
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
@@ -13,7 +14,12 @@ createInertiaApp({
     setup({ el, App, props }) {
         const root = createRoot(el);
 
-        root.render(<App {...props} />);
+        root.render(
+            <>
+                <Header /> {/* Render the header component */}
+                <App {...props} />
+            </>
+        );
     },
     progress: {
         color: '#4B5563',
