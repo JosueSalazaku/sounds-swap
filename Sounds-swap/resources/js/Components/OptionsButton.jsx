@@ -19,7 +19,7 @@ function OptionsButton() {
                 {buttonData.map(button => (
                     <li key={button.id}>
                         <a href={button.link}>
-                            <button className='bg-secondary py-1 px-6 text-primary rounded-lg'>
+                            <button className='bg-secondary py-1 px-6 text-primary rounded-lg font-semibold active:text-white active:bg-primary hover:bg-primary hover:text-white'>
                                 {button.label}
                             </button>
                         </a>
