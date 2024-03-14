@@ -14,8 +14,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/Landing', function () {
-    return Inertia::render(('Landing'));
+Route::get('/Welcome', function () {
+    return Inertia::render(('Welcome'));
 });
 
 Route::get('/Products', function () {
