@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-      <header className='flex flex-row justify-evenly items-center bg-secondary py-4 border-b-2 border-'>
+      <header className='flex flex-row justify-evenly items-center bg-secondary py-4 border-b-2 border-primary font-sans'>
           <img src="/images/SoundSwap_logo_3.png" alt="logo" className='h-15 w-12'/>
           <ul className='flex flex-row space-x-7'>
           <li>Products</li>

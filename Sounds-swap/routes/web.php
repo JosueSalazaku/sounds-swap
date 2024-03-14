@@ -22,6 +22,10 @@ Route::get('/Products', function () {
     return Inertia::render(('Products'));
 });
 
+Route::get('/Contact', function () {
+    return Inertia::render(('Products'));
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

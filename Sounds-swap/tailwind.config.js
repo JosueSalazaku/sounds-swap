@@ -13,11 +13,11 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                sans: ["Quicksand", ...defaultTheme.fontFamily.sans], // Use Quicksand font
             },
             colors: {
                 primary: "#59D45F", // Change to your primary color
-                secondary: "#ECFEE7 ", // Change to your secondary color
+                secondary: "#ECFEE7", // Change to your secondary color (removed extra space)
                 accent: "#85FF33", // Change to your accent color
                 "light-bg": "#F1FFF2", // Change to your light background color
                 "dark-bg": "#85FF33", // Change to your dark background color

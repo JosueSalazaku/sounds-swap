@@ -14,7 +14,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
     return (
         <main>
-           <h1 className="text-3xl">Wlecom to our landing page</h1>
+           <h1 className="text-3xl font-sans">Welcome to our landing page</h1>
         </main>
     );
 }

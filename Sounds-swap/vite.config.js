@@ -10,4 +10,10 @@ export default defineConfig({
         }),
         react(),
     ],
+    css: {
+        preprocessorOptions: {
+
+            includePaths: ['/resources/css'],
+        },
+    },
 });
