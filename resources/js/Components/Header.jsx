@@ -15,6 +15,8 @@ function Header() {
             <ul className="flex flex-row- space-x-7">
                 <li><Link to="/products">Products</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/SignIn">Sign In</Link></li>
+                <li><Link to="/SignUp">Sign Up</Link></li>
             </ul>
             <ul className="flex flex-row space-x-7">
                 <li>Sign In</li>
