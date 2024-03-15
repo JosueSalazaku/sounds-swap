@@ -1,6 +1,6 @@
 import React from "react";
 
-function OptionsButton() {
+function OptionsButtons() {
     const buttonData = [
         { id: 1, label: "Lighting", link: "/link1" },
         { id: 2, label: "Mixing Board", link: "/link2" },
@@ -8,8 +8,8 @@ function OptionsButton() {
         { id: 4, label: "Monitors", link: "/link4" },
         { id: 5, label: "Sound Systems", link: "/link5" },
         { id: 6, label: "Products", link: "/link6" },
-
         // Add the links to all the options pages and changes the button names/ labels
+
     ];
 
     return (
@@ -18,7 +18,7 @@ function OptionsButton() {
                 {buttonData.map((button) => (
                     <li key={button.id}>
                         <a href={button.link}>
-                            <button className="bg-secondary py-1 px-6 text-primary rounded-lg font-semibold active:text-white active:bg-primary hover:bg-primary hover:text-white">
+                            <button className="bg-secondary py-1 px-6 text-primary rounded-lg font-bold active:text-white active:bg-primary hover:bg-primary transition ease-in-out delay-150 hover:text-white">
                                 {button.label}
                             </button>
                         </a>
@@ -29,4 +29,4 @@ function OptionsButton() {
     );
 }
 
-export default OptionsButton;
+export default OptionsButtons;
