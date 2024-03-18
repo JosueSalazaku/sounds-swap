@@ -7,6 +7,7 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
+import AboutUs from "./Pages/AboutUs";
 
 import OptionsButtons from "./Components/OptionsButtons"; // Import OptionsButtons component
 
@@ -24,7 +25,8 @@ createInertiaApp({
     setup({ el, App, props }) {
         const AppRoutes = () => (
             <Routes>
-                <Route exact path="/" element={<App {...props} />} />
+            <Route exact path="/" element={<App {...props} />} />
+                <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="/Products" element={<Products />} />
                 <Route path="/Pricing" element={<Pricing />} />
                 <Route path="/Community" element={<Community />} />

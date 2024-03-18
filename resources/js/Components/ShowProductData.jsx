@@ -1,5 +1,5 @@
 import React from "react";
-import dummyProductData from "/Users/josuesalazaku/Developer/BeCode/Summerpastures/sounds-swap/resources/DummyData/ProductData.js";
+import dummyProductData from "../DummyData/ProductData.js";
 
 export const ShowProductData = () => {
     return (
