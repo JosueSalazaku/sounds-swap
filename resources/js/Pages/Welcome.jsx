@@ -13,8 +13,17 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     };
 
     return (
-        <main>
-           <h1 className="text-3xl font-sans">Welcome to our landing page</h1>
+        <main className="flex flex-col justify-start items-center">
+            <div className="h-screen w-screen flex flex-col justify-start items-center">
+                <h1 className="font-extrabold text-primary mt-12 font-sans text-7xl text-center">SoundSwap <br /> The Place To Buy Or Sell <br /> Audio Equipement </h1>
+                <div className="mt-28 space-x-28">
+                <button className="h-12 w-40 text-white bg-primary">BUY</button>
+                <button className="h-12 w-40 text-white bg-primary">SELL</button>
+                </div>
+            </div>
+            <div className="h-screen w-screen" >
+                <h2 className="text-4xl font-bold">Why SoundSwap?</h2>
+            </div>
         </main>
     );
 }

@@ -12,6 +12,7 @@ import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react'; // Make sure this import is only once
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes component
 
+
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
@@ -21,7 +22,7 @@ createInertiaApp({
   },
   setup({ el, App, props }) {
     const AppRoutes = () => (
-      <Routes> {/* Wrap routes in a <Routes> element */}
+      <Routes>
         <Route exact path="/" element={<App {...props} />} />
         <Route path="/Products" element={<Products />} />
         <Route path="/Contact" element={<Contact />} />
