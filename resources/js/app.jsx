@@ -9,7 +9,7 @@ import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
 import AboutUs from "./Pages/AboutUs";
 
-import OptionsButtons from "./Components/OptionsButtons"; // Import OptionsButtons component
+import OptionsButtons from "./Components/OptionsButtons"; 
 
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
