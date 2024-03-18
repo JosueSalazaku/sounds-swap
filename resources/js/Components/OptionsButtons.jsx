@@ -1,15 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function OptionsButtons() {
     const buttonData = [
-        { id: 1, label: "Lighting", link: "/link1" },
-        { id: 2, label: "Mixing Board", link: "/link2" },
-        { id: 3, label: "Microphones", link: "/link3" },
-        { id: 4, label: "Monitors", link: "/link4" },
-        { id: 5, label: "Sound Systems", link: "/link5" },
-        { id: 6, label: "Products", link: "/link6" },
+        { id: 1, label: "Lighting", link: "/Lighting" },
+        { id: 2, label: "Mixing Board", link: "/MixingBoard" },
+        { id: 3, label: "Microphones", link: "/Microphones" },
+        { id: 4, label: "Monitors", link: "/Monitors" },
+        { id: 5, label: "Sound Systems", link: "/SoundSystems" },
+        { id: 6, label: "Products", link: "/Products" },
         // Add the links to all the options pages and changes the button names/ labels
-
     ];
 
     return (
@@ -17,11 +17,11 @@ function OptionsButtons() {
             <ul className="flex space-x-10">
                 {buttonData.map((button) => (
                     <li key={button.id}>
-                        <a href={button.link}>
+                        <Link to={button.link}>
                             <button className="bg-secondary py-1 px-6 text-primary rounded-lg font-bold active:text-white active:bg-primary hover:bg-primary transition ease-in-out delay-150 hover:text-white">
                                 {button.label}
                             </button>
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
