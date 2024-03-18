@@ -1,7 +1,6 @@
 import React from "react";
 import SearchBar from "@/Components/SearchBar";
 import OptionsButtons from "@/Components/OptionsButtons";
-import dummyProductData from "../DummyData/ProductData.js";
 import ShowProductData from "@/Components/ShowProductData";
 
 function Products() {
