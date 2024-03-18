@@ -9,8 +9,6 @@ import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
 import AboutUs from "./Pages/AboutUs";
 
-import OptionsButtons from "./Components/OptionsButtons"; 
-
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,15 +23,15 @@ createInertiaApp({
     setup({ el, App, props }) {
         const AppRoutes = () => (
             <Routes>
-            <Route exact path="/" element={<App {...props} />} />
+                <Route exact path="/" element={<App {...props} />} />
                 <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="/Products" element={<Products />} />
                 <Route path="/Pricing" element={<Pricing />} />
                 <Route path="/Community" element={<Community />} />
+                <Route path="/SignUp" element={<SignUp />} />
                 <Route path="/Contact" element={<Contact />} />
                 <Route path="/SignIn" element={<SignIn />} />
                 <Route path="/SignUp" element={<SignUp />} />
-                <Route path="/Options" element={<OptionsButtons />} />
             </Routes>
         );
 
