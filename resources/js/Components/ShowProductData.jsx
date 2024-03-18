@@ -30,7 +30,7 @@ export const ShowProductData = () => {
                                         </h3>
                                         {/* <p>{item.description}</p> */}
                                         <p className="font-bold">
-                                            {item.price}
+                                            €{item.price}
                                         </p>
                                     </div>
                                 ))}
