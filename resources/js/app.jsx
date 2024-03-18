@@ -1,10 +1,15 @@
-import './bootstrap';
-import '../css/app.css';
-import Header from './Components/Header';
-import Products from './Pages/Products';
-import Contact from './Pages/Contact';
-import SignIn from './Pages/SignIn';
-import SignUp from './Pages/SignUp';
+import "./bootstrap";
+import "../css/app.css";
+import Header from "./Components/Header";
+import Products from "./Pages/Products";
+import Contact from "./Pages/Contact";
+import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
+import Pricing from "./Pages/Pricing";
+import Community from "./Pages/Community";
+import AboutUs from "./Pages/AboutUs";
+
+import OptionsButtons from "./Components/OptionsButtons"; // Import OptionsButtons component
 
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react'; 
