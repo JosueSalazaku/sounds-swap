@@ -9,13 +9,16 @@ export const ShowProductData = () => {
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
-                        <div key={index} className="flex flex-row flex-wrap space-x-16">
+                        <div
+                            key={index}
+                            className="flex flex-row flex-wrap space-x-28"
+                        >
                             {dummyProductData
                                 .slice(index, index + 4)
                                 .map((item) => (
                                     <div
                                         key={item.id}
-                                        className="flex flex-col flex-grow w-64 mx-2 my-2  border border-primary rounded-lg"
+                                        className="flex flex-col w-72 mx-2 my-5 p-12  bg-secondary rounded-md"
                                     >
                                         <img
                                             src={item.image}
@@ -25,7 +28,7 @@ export const ShowProductData = () => {
                                         <h3 className="font-bold">
                                             {item.name}
                                         </h3>
-                                        <p>{item.description}</p>
+                                        {/* <p>{item.description}</p> */}
                                         <p className="font-bold">
                                             {item.price}
                                         </p>
