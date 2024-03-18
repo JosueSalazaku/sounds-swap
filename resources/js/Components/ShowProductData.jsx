@@ -1,5 +1,5 @@
 import React from "react";
-import dummyProductData from "/Users/josuesalazaku/Developer/BeCode/Summerpastures/sounds-swap/resources/DummyData/ProductData.js";
+import dummyProductData from "../DummyData/ProductData.js";
 
 export const ShowProductData = () => {
     return (
@@ -9,25 +9,25 @@ export const ShowProductData = () => {
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
-                        <div key={index} className="flex flex-row flex-wrap space-x-16">
+                        <div key={index} className="flex flex-row  space-x-12">
                             {dummyProductData
                                 .slice(index, index + 4)
                                 .map((item) => (
                                     <div
                                         key={item.id}
-                                        className="flex flex-col flex-grow w-64 mx-2 my-2  border border-primary rounded-lg"
+                                        className="flex flex-col w-80 mx-2 my-5 p-10  bg-secondary rounded-md"
                                     >
                                         <img
                                             src={item.image}
                                             alt={item.name}
-                                            className="w-full h-auto"
+                                            className="h-44 w-44 border border-primary"
                                         />
                                         <h3 className="font-bold">
                                             {item.name}
                                         </h3>
-                                        <p>{item.description}</p>
+                                        {/* <p>{item.description}</p> */}
                                         <p className="font-bold">
-                                            {item.price}
+                                            €{item.price}
                                         </p>
                                     </div>
                                 ))}

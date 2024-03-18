@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 function OptionsButtons() {
     const buttonData = [
         { id: 1, label: "Lighting", link: "/Lighting" },
@@ -8,8 +9,7 @@ function OptionsButtons() {
         { id: 3, label: "Microphones", link: "/Microphones" },
         { id: 4, label: "Monitors", link: "/Monitors" },
         { id: 5, label: "Sound Systems", link: "/SoundSystems" },
-        { id: 6, label: "Products", link: "/Products" },
-        // Add the links to all the options pages and changes the button names/ labels
+        { id: 6, label: "Products", link: "/Prod" },
     ];
 
     return (

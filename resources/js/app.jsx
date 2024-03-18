@@ -1,19 +1,16 @@
 import './bootstrap';
 import '../css/app.css';
 import Header from './Components/Header';
-import AboutUs from './Pages/AboutUs';
 import Products from './Pages/Products';
 import Contact from './Pages/Contact';
 import SignIn from './Pages/SignIn';
 import SignUp from './Pages/SignUp';
-import Footer from './Components/Footer';
 
 import { createRoot } from 'react-dom/client';
-import { createInertiaApp } from '@inertiajs/react'; // Make sure this import is only once
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes component
+import { createInertiaApp } from '@inertiajs/react'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
 createInertiaApp({
   resolve: name => {
@@ -26,7 +23,6 @@ createInertiaApp({
         <Route exact path="/" element={<App {...props} />} />
         <Route path="/Products" element={<Products />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/SignUp" element={<SignUp />} />
       </Routes>
@@ -36,8 +32,7 @@ createInertiaApp({
       <Router>
         <>
           <Header />
-          <AppRoutes /> {/* Render AppRoutes inside the Router */}
-          <Footer /> 
+          <AppRoutes /> 
         </>
       </Router>
     );
