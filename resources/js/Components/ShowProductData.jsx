@@ -3,23 +3,27 @@ import dummyProductData from "../DummyData/ProductData.js";
 
 export const ShowProductData = () => {
     return (
-        <main className="mt-20">
+        <main className="mt-20 flex flex-col justify-start item-center">
             {dummyProductData.map(
                 (product, index) =>
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
-                        <div key={index} className="flex flex-row space-x-12">
+                        <div key={index} className="flex flex-row gap-10">
                             {dummyProductData
                                 .slice(index, index + 4)
                                 .map((item) => (
-
-
                                     <div
                                         key={item.id}
-                                        className="flex flex-col justify-center w-80 mx-2 my-4 p-6  bg-secondary rounded-md"
+                                        className="flex flex-col justify-center w-80 my-4 p-6  bg-secondary rounded-md"
                                     >
-                                        <div><img src="/Users/josuesalazaku/Developer/BeCode/Summerpastures/sounds-swap/public/bookmark-silhouette-variant-svgrepo-com.svg" alt="" /></div>
+                                        <div className="flex flex-row-reverse">
+                                            <img
+                                                src="/images/favorite-bookmark-svgrepo-com.svg"
+                                                alt=""
+                                                className="h-8 w-9 active: fill-primary"
+                                            />
+                                        </div>
                                         <img
                                             src={item.image}
                                             alt={item.name}
