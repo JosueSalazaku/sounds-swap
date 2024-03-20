@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 
-
 function OptionsButtons() {
     const buttonData = [
         { id: 1, label: "Lighting", link: "/Lighting" },
@@ -13,7 +12,7 @@ function OptionsButtons() {
     ];
 
     return (
-        <div>
+        <div className="my-20">
             <ul className="flex space-x-10">
                 {buttonData.map((button) => (
                     <li key={button.id}>
