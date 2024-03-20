@@ -1,4 +1,4 @@
-const dummyProductData = [
+const LightsDummyData = [
     {
         id: 1,
         category: "Lighting",
@@ -166,4 +166,4 @@ const dummyProductData = [
     // Add more lights, mixing boards, and microphones here...
 ];
 
-export default dummyProductData;
+export default LightsDummyData;
