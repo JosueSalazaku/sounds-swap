@@ -8,6 +8,7 @@ import SignUp from "./Pages/SignUp";
 import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
 import AboutUs from "./Pages/AboutUs";
+import OptionsButtons from "./Components/OptionsButtons"; // Import your OptionsButtons component
 
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
@@ -39,6 +40,8 @@ createInertiaApp({
             <Router>
                 <>
                     <Header />
+                    <OptionsButtons />{" "}
+                    {/* Include your OptionsButtons component here */}
                     <AppRoutes />
                 </>
             </Router>
