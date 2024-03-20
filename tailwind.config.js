@@ -19,6 +19,7 @@ export default {
                 primary: "#59D45F", // Change to your primary color
                 secondary: "#ECFEE7", // Change to your secondary color (removed extra space)
                 accent: "#85FF33", // Change to your accent color
+                card: "#f7fcf5", // Change to component background color
                 "light-bg": "#F1FFF2", // Change to your light background color
                 "dark-bg": "#85FF33", // Change to your dark background color
             },
