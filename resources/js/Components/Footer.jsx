@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link from React Router
 
 function Footer() {
   return (
-    <footer className = "flex flex-row justify-around space-x-20 font-semibold text-xl items-center bg-secondary py-4 border-t-2 border-primary font-sans">
+    <footer className = "fixed bottom-0 left-0 w-full flex flex-row justify-around space-x-20 font-semibold text-xl items-center bg-secondary py-4 border-t-2 border-primary font-sans">
      <Link to="/">
                 <img
                     src="/images/SoundSwap_logo_3.png"
