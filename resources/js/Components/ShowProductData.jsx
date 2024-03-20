@@ -13,20 +13,23 @@ export const ShowProductData = () => {
                             {dummyProductData
                                 .slice(index, index + 4)
                                 .map((item) => (
+
+
                                     <div
                                         key={item.id}
-                                        className="flex flex-col justify-center items-center w-80 mx-2 my-5 p-10  bg-secondary rounded-md"
+                                        className="flex flex-col justify-center w-80 mx-2 my-4 p-6  bg-secondary rounded-md"
                                     >
+                                        <div><img src="/Users/josuesalazaku/Developer/BeCode/Summerpastures/sounds-swap/public/bookmark-silhouette-variant-svgrepo-com.svg" alt="" /></div>
                                         <img
                                             src={item.image}
                                             alt={item.name}
-                                            className="h-44 w-44 border border-primary"
+                                            className="h-44 w-48 self-center mt-4"
                                         />
-                                        <h3 className="font-bold m-2">
+                                        <h3 className="font-bold m-2 pl-7">
                                             {item.name}
                                         </h3>
                                         {/* <p>{item.description}</p> */}
-                                        <p className="font-bold">
+                                        <p className="font-extrabold pl-8">
                                             €{item.price}
                                         </p>
                                     </div>

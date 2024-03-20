@@ -13,7 +13,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Quicksand", ...defaultTheme.fontFamily.sans], // Use Quicksand font
+                sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 primary: "#59D45F", // Change to your primary color
