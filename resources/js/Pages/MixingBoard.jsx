@@ -52,20 +52,24 @@ function Ligthing() {
                 ) : null
             )}
             {selectedItem && (
-                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-lg shadow-lg">
+                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-light-bg p-4 rounded-lg shadow-lg">
                     <img
                         src={selectedItem.image}
                         alt={selectedItem.name}
-                        className="w-32 h-32"
+                        className="w-full h-full mx-auto"
                     />
-                    <p className="font-bold">{selectedItem.name}</p>
-                    <p>{selectedItem.description}</p>
-                    <button
-                        onClick={() => setSelectedItem(null)}
-                        className="bg-primary text-white font-bold rounded-lg h-10 w-20 mt-4 hover:bg-accent active:bg-primary"
-                    >
-                        Close
-                    </button>
+                    <div className="text-center">
+                        <p className="font-bold text-xl">{selectedItem.name}</p>
+                        <p className="font-bold text-2xl font-large py-5">
+                            {selectedItem.description}
+                        </p>
+                        <button
+                            onClick={() => setSelectedItem(null)}
+                            className="bg-primary text-white font-bold rounded-lg h-10 w-20 mt-4 hover:bg-accent active:bg-primary"
+                        >
+                            X
+                        </button>
+                    </div>
                 </div>
             )}
         </main>
