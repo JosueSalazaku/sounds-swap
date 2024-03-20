@@ -163,6 +163,24 @@ const LightsDummyData = [
         price: 89.99,
         image: "https://m.media-amazon.com/images/I/61wkBsTZFIL._AC_SL1500_.jpg",
     },
+    {
+        id: 19,
+        category: "Lighting",
+        name: "Gobo Projector",
+        description:
+            "Project custom images and patterns with this versatile gobo projector. Ideal for branding, events, and theatrical productions.",
+        price: 349.99,
+        image: "https://m.media-amazon.com/images/I/71d5JbUMrVL._AC_SL1500_.jpg",
+    },
+    {
+        id: 20,
+        category: "Lighting",
+        name: "RGB Strip Lights",
+        description:
+            "Decorate and illuminate any space with these colorful RGB strip lights. Perfect for parties, home decor, and stage backdrops.",
+        price: 29.99,
+        image: "https://m.media-amazon.com/images/I/61jHh7q7KRL._AC_SL1000_.jpg",
+    },
     // Add more lights, mixing boards, and microphones here...
 ];
 

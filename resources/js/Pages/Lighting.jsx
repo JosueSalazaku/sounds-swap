@@ -3,9 +3,9 @@ import LightsDummyData from "@/DummyData/LightsDummyData";
 
 function Ligthing() {
     return (
-        <main className="mt-20 flex flex-col justify-start item-center">
+        <main className="mt-20 flex flex-col justify-center item-center">
             {LightsDummyData.map(
-                (product, index) =>
+                (lights, index) =>
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
