@@ -45,10 +45,15 @@ createInertiaApp({
 
         createRoot(el).render(
             <Router>
-                <>
+                <div className="w-screen h-screen flex flex-col">
                     <Header />
                     <AppRoutes />
+<<<<<<< HEAD
                 </>
+=======
+                    <Footer />
+                </ div>
+>>>>>>> becca
             </Router>
         );
     },
