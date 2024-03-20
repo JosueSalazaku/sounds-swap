@@ -45,6 +45,9 @@ function ShowProductData() {
                                         <p className="font-extrabold pl-8">
                                             €{item.price}
                                         </p>
+                                        <button className="bg-primary text-white font-bold rounded-lg h-10 w-20 my-3 self-end hover:bg-accent active:bg-primary">
+                                        Buy
+                                    </button>
                                     </div>
                                 ))}
                         </div>
