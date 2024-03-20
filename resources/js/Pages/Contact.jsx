@@ -1,13 +1,3 @@
-/* import React from 'react';
-
-function Contact() {
-  return (
-    <div>Contact</div>
-  )
-}
-
-export default Contact; */
-
 import React, { useState } from 'react';
 
 function Contact() {
@@ -19,29 +9,57 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     setSubmitted(true);
-  }
+  };
 
   return (
-    <div>
+    <div className="max-w-md p-6 mx-auto mt-8 bg-white rounded shadow-md">
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-        </label>
-        <br />
-        <label>
-          Message:
-          <textarea value={message} onChange={(event) => setMessage(event.target.value)} />
-        </label>
-        <br />
-        <button type="submit">Send</button>
+        <div className="mb-4">
+          <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="name">
+            Name:
+          </label>
+          <input
+            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+            id="name"
+            type="text"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
+            Email:
+          </label>
+          <input
+            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+            id="email"
+            type="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="message">
+            Message:
+          </label>
+          <textarea
+            className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+            id="message"
+            value={message}
+            onChange={(event) => setMessage(event.target.value)}
+          />
+        </div>
+        <div className="mb-4">
+          <button
+            className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+            type="submit"
+            style={{ backgroundColor: '#59d45f' }}
+          >
+            Send
+          </button>
+        </div>
       </form>
-      {submitted && <p>Message sent!</p>}
+      {submitted && <p className="text-green-500">Message sent!</p>}
     </div>
   );
 }
