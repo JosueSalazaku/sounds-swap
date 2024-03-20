@@ -18,7 +18,6 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // You can perform any desired actions here, such as showing a message or clearing the form fields
     setSubmitted(true);
   }
 
