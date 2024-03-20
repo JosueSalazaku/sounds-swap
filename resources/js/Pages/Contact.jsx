@@ -1,19 +1,27 @@
 import React, { useState } from 'react';
+import { useForm } from '@inertiajs/react';
 
-function Contact() {
+function Contact({token}) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = async (event) => {
+  const { data, setData, errors, post } = useForm({
+    name: "",
+    email: "",
+    message: "",
+});
+  const handleSubmit = (event) => {
     event.preventDefault();
+    post(route("contact.store"));
+  }
     
-    try {
+    /* try {
       const response = await fetch('/Contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-CSRF-TOKEN': window.Laravel.csrfToken, // Include a CSRF token
+          'X-CSRF-TOKEN': token
         },
         body: JSON.stringify({ name, email, message }),
       });
@@ -24,14 +32,14 @@ function Contact() {
         setMessage('');
         setSubmitted(true);
       } else {
-        // Handle server-side errors or other non-2xx responses
+        // Handle server-side errors or other non-success HTTP responses
         console.error('Failed to submit form:', response.statusText);
       }
     } catch (error) {
       // Handle network errors
       console.error('Network error:', error);
     }
-  };
+  }; */
   
 
   return (
@@ -45,8 +53,8 @@ function Contact() {
             className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
             id="name"
             type="text"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
+            value={data.name}
+            onChange={(event) => setData("name",event.target.value)}
           />
         </div>
         <div className="mb-4">
@@ -57,8 +65,8 @@ function Contact() {
             className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
             id="email"
             type="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            value={data.email}
+            onChange={(event) => setData("email",event.target.value)}
           />
         </div>
         <div className="mb-4">
@@ -68,8 +76,8 @@ function Contact() {
           <textarea
             className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
             id="message"
-            value={message}
-            onChange={(event) => setMessage(event.target.value)}
+            value={data.message}
+            onChange={(event) => setData('message',event.target.value)}
           />
         </div>
         <div className="mb-4">

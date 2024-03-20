@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use App\Http\Controllers\Auth\ContactController;
+use App\Http\Controllers\ContactController;
 
 Route::post('/Contact', [ContactController::class, 'store'])->name('contact.store');
 
@@ -26,7 +26,7 @@ Route::get('/Products', function () {
 });
 
 Route::get('/Contact', function () {
-    return Inertia::render(('Contact'));
+    return Inertia::render('Contact');
 });
 
 Route::get('/AboutUs', function () {
