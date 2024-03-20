@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -13,15 +13,17 @@
         <!-- Scripts -->
         @routes
         @viteReactRefresh
-        @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
+        @vite(['resources/js/app.jsx', "resources/js/app.jsx"])
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
     </body>
 </html>
-{{-- 
-<!DOCTYPE html>
+
+ --}}
+
+ <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -35,16 +37,12 @@
 
     <!-- Scripts -->
     @routes
-    @php
-        $page = $page ?? ['component' => '']; // Define default value for $page variable
-    @endphp
-    @if(isset($page['component']) && $page['component'])
+    @isset($page['component'])
         @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
-    @endif
-
+    @endisset
+    @inertiaHead
 </head>
 <body class="font-sans antialiased">
     @inertia
 </body>
-</html> --}}
-
+</html>

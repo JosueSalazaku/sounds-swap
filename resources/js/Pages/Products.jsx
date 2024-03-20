@@ -5,7 +5,7 @@ import ShowProductData from "@/Components/ShowProductData";
 
 function Products() {
     return (
-        <main className="h-screen flex flex-col justify-start items-center">
+        <main className="flex flex-col items-center justify-start h-screen">
             {/* Searchbar*/}
             <SearchBar />
             {/* options button components */}
