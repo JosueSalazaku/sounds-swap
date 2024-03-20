@@ -1,6 +1,7 @@
 import React from "react";
 import LightsDummyData from "@/DummyData/LightsDummyData";
 import OptionsButtons from "@/Components/OptionsButtons";
+import SearchBar from "@/Components/SearchBar";
 
 function Ligthing() {
     return (
@@ -37,6 +38,10 @@ function Ligthing() {
                                         <p className="font-extrabold pl-8">
                                             €{item.price}
                                         </p>
+
+                                        <button className=" bg-accent rounded-lg h-10 w-20 my-3 self-end active:bg-primary">
+                                            Buy
+                                        </button>
                                     </div>
                                 )
                             )}
