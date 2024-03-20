@@ -3,16 +3,15 @@ import LightsDummyData from "@/DummyData/LightsDummyData";
 
 function Ligthing() {
     return (
-        <main className="mt-20 flex flex-col justify-center item-center">
+        <main className="mt-20 w-screen flex flex-col justify-center items-center">
             {LightsDummyData.map(
                 (lights, index) =>
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
                         <div key={index} className="flex flex-row gap-10">
-                            {LightsDummyData
-                                .slice(index, index + 4)
-                                .map((item) => (
+                            {LightsDummyData.slice(index, index + 4).map(
+                                (item) => (
                                     <div
                                         key={item.id}
                                         className="flex flex-col justify-center w-80 my-4 p-6  bg-secondary rounded-md"
@@ -37,13 +36,13 @@ function Ligthing() {
                                             €{item.price}
                                         </p>
                                     </div>
-                                ))}
+                                )
+                            )}
                         </div>
                     ) : null // If the current index is not divisible by 4, don't render anything
             )}
         </main>
     );
-};
-
+}
 
 export default Ligthing;
