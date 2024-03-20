@@ -13,13 +13,17 @@ export const ShowProductData = () => {
                             {dummyProductData
                                 .slice(index, index + 4)
                                 .map((item) => (
-
-
                                     <div
                                         key={item.id}
                                         className="flex flex-col justify-center w-80 mx-2 my-4 p-6  bg-secondary rounded-md"
                                     >
-                                        <div><img src="/Users/josuesalazaku/Developer/BeCode/Summerpastures/sounds-swap/public/bookmark-silhouette-variant-svgrepo-com.svg" alt="" /></div>
+                                        <div className="flex flex-row-reverse">
+                                            <img
+                                                src="/images/bookmark-silhouette-variant-svgrepo-com.svg"
+                                                alt=""
+                                                className="h-8 w-9"
+                                            />
+                                        </div>
                                         <img
                                             src={item.image}
                                             alt={item.name}
