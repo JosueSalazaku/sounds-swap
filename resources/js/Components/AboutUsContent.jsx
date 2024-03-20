@@ -2,21 +2,23 @@ import React from 'react'
 
 const AboutUsContent = () => {
   return (
-            <div className="h-screen flex flex-col justify-start items-center">
-                <h1 className="font-extrabold text-primary mt-12 mb-12 font-sans text-4xl text-center">About Us</h1>
-                <div className="w-2/3 bg-secondary">
+            <div className="flex flex-col items-center">
+                <h1 className="font-extrabold text-primary my-12 font-sans text-4xl text-center">About Us</h1>
+                <div className="w-2/3 mb-12 bg-secondary">
                     <p className="mx-auto p-5">At Sound Swap, we're passionate about delivering exceptional audio experiences to every customer. 
                     Whether you're an audiophile, a professional sound engineer, or a casual listener, we're here to provide 
                     you with a seamless platform to buy and sell top-quality audio equipment.</p>
                 </div>
-                <h1 className="font-extrabold text-primary mt-12 mb-12 font-sans text-4xl text-center">Our Mission</h1>
-                <div className="w-2/3 bg-secondary">
+
+                <h1 className="font-extrabold text-primary my-12 font-sans text-4xl text-center">Our Mission</h1>
+                <div className="w-2/3 mb-12 bg-secondary">
                     <p className="mx-auto p-5">Our mission at Sound Swap is simple: to connect audio enthusiasts with the finest audio gear 
                     available on the market. We believe that everyone deserves to experience the pure joy of crystal-clear sound, and we're 
                     committed to making that a reality for our customers.</p>
                 </div>
-                <h1 className="font-extrabold text-primary mt-12 mb-12 font-sans text-4xl text-center">What Sets Us Apart</h1>
-                <div className="w-2/3 bg-secondary">
+
+                <h1 className="font-extrabold text-primary my-12 font-sans text-4xl text-center">What Sets Us Apart</h1>
+                <div className="w-2/3 mb-12 bg-secondary">
                     <h3 className="font-extrabold text-primary mt-4 mb-2 font-sans text-xl text-center">Trusted Sellers:</h3>
                     <p className="mx-auto p-5">When you shop with Sound Swap, you can shop with confidence. Our sellers are vetted for reliability and 
                     authenticity, so you can trust that you're getting exactly what you pay for.</p>
