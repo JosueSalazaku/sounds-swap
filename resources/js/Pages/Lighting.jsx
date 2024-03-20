@@ -5,14 +5,14 @@ import OptionsButtons from "@/Components/OptionsButtons";
 
 function Ligthing() {
     return (
-        <main className="mt-20 w-screen flex flex-col justify-center items-center">
+        <main className="my-20 w-screen flex flex-col justify-center items-center">
             <OptionsButtons/>
             {LightsDummyData.map(
                 (lights, index) =>
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
-                        <div key={index} className="flex flex-row gap-10">
+                        <div key={index} className="flex flex-row gap-10 mt-20">
                             {LightsDummyData.slice(index, index + 4).map(
                                 (item) => (
                                     <div
