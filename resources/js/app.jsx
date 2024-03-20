@@ -15,7 +15,6 @@ import Microphones from "./Pages/Microphones";
 import Monitors from "./Pages/Monitors";
 import SoundSystems from "./Pages/SoundSystems";
 import Prod from "./Pages/Prod";
-import OptionsButtons from "./Components/OptionsButtons";
 
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
