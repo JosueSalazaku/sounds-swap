@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import MixingBoardDummyData from "@/DummyData/MixingBoardDummyData";
 import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
 function Ligthing() {
+    const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+    };
     return (
         <main className="my-12 w-screen flex flex-col justify-center items-center">
             <SearchBar />
