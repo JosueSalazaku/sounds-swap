@@ -12,7 +12,7 @@ function OptionsButtons() {
     ];
 
     return (
-        <div className="my-20">
+        <div className="my-12">
             <ul className="flex space-x-10">
                 {buttonData.map((button) => (
                     <li key={button.id}>
