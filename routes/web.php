@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\Auth\ContactController;
+
+Route::post('/Contact', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
