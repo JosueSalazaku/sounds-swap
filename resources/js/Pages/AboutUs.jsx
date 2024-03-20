@@ -3,7 +3,7 @@ import React from "react";
 
 function AboutUs() {
     return (
-        <main className ="h-screen overflow-y-auto">
+        <main className ="flex-grow">
              <AboutUsContent />
         </main>
     );
