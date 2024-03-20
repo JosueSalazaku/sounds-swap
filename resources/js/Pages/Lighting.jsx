@@ -5,7 +5,8 @@ import SearchBar from "@/Components/SearchBar";
 
 function Ligthing() {
     return (
-        <main className="my-20 w-screen flex flex-col justify-center items-center">
+        <main className="my-12 w-screen flex flex-col justify-center items-center">
+            <SearchBar />
             <OptionsButtons />
             {LightsDummyData.map(
                 (lights, index) =>
@@ -39,7 +40,7 @@ function Ligthing() {
                                             €{item.price}
                                         </p>
 
-                                        <button className=" bg-accent rounded-lg h-10 w-20 my-3 self-end active:bg-primary">
+                                        <button className=" bg-primary text-white font-bold rounded-lg h-10 w-20 my-3 self-end hover:bg-accent active:bg-primary">
                                             Buy
                                         </button>
                                     </div>

@@ -1,10 +1,12 @@
 import React from "react";
 import MixingBoardDummyData from "@/DummyData/MixingBoardDummyData";
 import OptionsButtons from "@/Components/OptionsButtons";
+import SearchBar from "@/Components/SearchBar";
 
 function Ligthing() {
     return (
-        <main className="my-20 w-screen flex flex-col justify-center items-center">
+      <main className="my-12 w-screen flex flex-col justify-center items-center">
+        <SearchBar/>
             <OptionsButtons />
             {MixingBoardDummyData.map(
                 (Mixing, index) =>
@@ -36,8 +38,8 @@ function Ligthing() {
                                         {/* <p>{item.description}</p> */}
                                         <p className="font-extrabold pl-8">
                                             €{item.price}
-                                  </p>
-                                  <button className=" bg-accent rounded-lg h-10 w-20 my-3 self-end active:bg-primary">
+                                        </p>
+                                        <button className=" border-4 border-accent rounded-lg h-10 w-20 my-3 self-end hover:bg-accent active:bg-primary">
                                             Buy
                                         </button>
                                     </div>
