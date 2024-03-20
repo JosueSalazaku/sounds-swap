@@ -2,17 +2,16 @@ import React from "react";
 import LightsDummyData from "@/DummyData/LightsDummyData";
 import OptionsButtons from "@/Components/OptionsButtons";
 
-
 function Ligthing() {
     return (
         <main className="my-20 w-screen flex flex-col justify-center items-center">
-            <OptionsButtons/>
+            <OptionsButtons />
             {LightsDummyData.map(
                 (lights, index) =>
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
-                        <div key={index} className="flex flex-row gap-10 mt-20">
+                        <div key={index} className="flex flex-row gap-10">
                             {LightsDummyData.slice(index, index + 4).map(
                                 (item) => (
                                     <div
