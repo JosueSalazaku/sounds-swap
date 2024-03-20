@@ -1,11 +1,6 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
-import Lighting from "@/Pages/Lighting";
-import MixingBoard from "@/Pages/MixingBoard";
-import Microphones from "@/Pages/Microphones";
-import Monitors from "@/Pages/Monitors";
-import SoundSystems from "@/Pages/SoundSystems";
-import Prod from "@/Pages/Prod";
+
 
 function OptionsButtons() {
     const buttonData = [
