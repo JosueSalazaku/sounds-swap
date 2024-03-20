@@ -1,3 +1,4 @@
+// App.jsx
 import "./bootstrap";
 import "../css/app.css";
 import Header from "./Components/Header";
@@ -8,6 +9,12 @@ import SignUp from "./Pages/SignUp";
 import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
 import AboutUs from "./Pages/AboutUs";
+import Lighting from "./Pages/Lighting";
+import MixingBoard from "./Pages/MixingBoard";
+import Microphones from "./Pages/Microphones";
+import Monitors from "./Pages/Monitors";
+import SoundSystems from "./Pages/SoundSystems";
+import Prod from "./Pages/Prod";
 
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
@@ -43,6 +50,7 @@ createInertiaApp({
                     <AppRoutes />
                     <Footer />
                 </ div>
+                </>
             </Router>
         );
     },

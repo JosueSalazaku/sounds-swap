@@ -1,18 +1,18 @@
 import React from "react";
-import MixingBoardDummyData from "@/DummyData/MixingBoardDummyData";
+import LightsDummyData from "@/DummyData/LightsDummyData";
 import OptionsButtons from "@/Components/OptionsButtons";
 
 function Ligthing() {
     return (
         <main className="my-20 w-screen flex flex-col justify-center items-center">
             <OptionsButtons />
-            {MixingBoardDummyData.map(
-                (Mixing, index) =>
+            {LightsDummyData.map(
+                (lights, index) =>
                     // Check if the current index is divisible by 4 to start a new row
                     index % 4 === 0 ? (
                         // Start a new row container
                         <div key={index} className="flex flex-row gap-10">
-                            {MixingBoardDummyData.slice(index, index + 4).map(
+                            {LightsDummyData.slice(index, index + 4).map(
                                 (item) => (
                                     <div
                                         key={item.id}

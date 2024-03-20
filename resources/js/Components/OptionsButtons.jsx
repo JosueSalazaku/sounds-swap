@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, Routes, Route } from "react-router-dom";
 
 function OptionsButtons() {
     const buttonData = [
@@ -13,7 +12,7 @@ function OptionsButtons() {
     ];
 
     return (
-        <div>
+        <div className="my-20">
             <ul className="flex space-x-10">
                 {buttonData.map((button) => (
                     <li key={button.id}>
