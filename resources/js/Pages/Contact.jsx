@@ -5,11 +5,34 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setSubmitted(true);
+    
+    try {
+      const response = await fetch('/Contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-TOKEN': window.Laravel.csrfToken, // Include a CSRF token
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+  
+      if (response.ok) {
+        setName('');
+        setEmail('');
+        setMessage('');
+        setSubmitted(true);
+      } else {
+        // Handle server-side errors or other non-2xx responses
+        console.error('Failed to submit form:', response.statusText);
+      }
+    } catch (error) {
+      // Handle network errors
+      console.error('Network error:', error);
+    }
   };
+  
 
   return (
     <div className="max-w-md p-6 mx-auto mt-8 bg-white rounded shadow-md">

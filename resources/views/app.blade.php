@@ -15,9 +15,18 @@
         @viteReactRefresh
         @vite(['resources/js/app.jsx', "resources/js/app.jsx"])
         @inertiaHead
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body class="font-sans antialiased">
         @inertia
+
+        <script>
+            window.Laravel = {!! json_encode([
+                'csrfToken' => csrf_token(),
+            ]) !!};
+        </script>
     </body>
 </html>
+
 
