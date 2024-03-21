@@ -11,7 +11,7 @@ function Ligthing() {
     };
 
     return (
-        <main className="my-12 w-screen flex flex-col justify-center items-center">
+        <main className="my-12 w-screen  flex flex-col justify-center items-center">
             <SearchBar />
             <OptionsButtons />
             {LightsDummyData.map((Lights, index) =>
