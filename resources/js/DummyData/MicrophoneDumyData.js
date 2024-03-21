@@ -7,7 +7,7 @@ const MicrophoneDumyData = [
         description:
             "The industry standard handheld microphone for vocals and instruments. Renowned for its durability and clear sound.",
         price: 109.99,
-        image: "https://shure.com/media/product/xl/sm58-stage-microphone_xl.png",
+        image: "https://static.bax-shop.es/image/product/10623/3724055/abba6ce9/1658477056Shure%20SM58SE-3.jpg",
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const MicrophoneDumyData = [
         description:
             "Versatile dynamic microphone with USB connectivity, ideal for podcasting, recording vocals, and instruments at home.",
         price: 69.99,
-        image: "https://images.sweetwater.com/images/items/699/AT2100X-USB_thumb.jpg",
+        image: "https://musicspace.co.th/wp-content/uploads/2020/05/audio-technica_atr2100x_usb_dynamic_microphone.jpg",
     },
     // Condenser Microphones
     {
@@ -26,7 +26,7 @@ const MicrophoneDumyData = [
         description:
             "Professional-grade studio condenser microphone known for its pristine audio capture and wide frequency response.",
         price: 229.99,
-        image: "https://www.rode.com/images/products/nt1_3qtr.png",
+        image: "https://images.musicstore.de/images/1280/rode-nt1-a-complete-vocal-recording-set_1_REC0007202-000.jpg",
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const MicrophoneDumyData = [
         description:
             "Affordable condenser microphone delivering detailed sound, perfect for home studios and recording vocals and instruments.",
         price: 149.99,
-        image: "https://images.sweetwater.com/images/items/699/AT2020_thumb.jpg",
+        image: "https://static.bax-shop.es/image/product/80134/194397/9b5c5315/audio_technica_at2020usb_plus.jpg",
     },
     // Ribbon Microphones
     {
@@ -45,7 +45,7 @@ const MicrophoneDumyData = [
         description:
             "Legendary ribbon microphone prized for its smooth, warm sound, ideal for vocals, instruments, and broadcast applications.",
         price: 2499.99,
-        image: "https://www.royerlabs.com/content/dam/royer/products/ribbon/r-121/royer-r-121-ribbon-microphone-front.png",
+        image: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_13/136816/12725627_800.jpg",
     },
     {
         id: 6,
@@ -54,7 +54,7 @@ const MicrophoneDumyData = [
         description:
             "High-quality ribbon microphone offering exceptional warmth and detail, suitable for vocals, instruments, and recording studios.",
         price: 1999.99,
-        image: "https://www.bhphotovideo.com/is/image/SKU/825817_aer88_thumb.jpg",
+        image: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_56/567159/18399812_800.jpg",
     },
     // Lavalier Microphones
     {
@@ -64,7 +64,7 @@ const MicrophoneDumyData = [
         description:
             "Discreet lavalier microphone for clear speech capture, perfect for presentations, video productions, and broadcasting.",
         price: 99.99,
-        image: "https://en-de.sennheiser.com/image/mke-2-me-2-black-1024x768.png",
+        image: "https://m.media-amazon.com/images/I/81sAx+47-qL.jpg",
     },
     {
         id: 8,
@@ -73,17 +73,17 @@ const MicrophoneDumyData = [
         description:
             "Compact and versatile lavalier microphone with omnidirectional pickup pattern, ideal for capturing audio in various applications.",
         price: 79.99,
-        image: "https://www.rode.com/images/products/lavalier_ii_front.png",
+        image: "https://img.artencraft.be/i/3447332.jpg",
     },
     // Headset Microphones
     {
         id: 9,
         category: "Headset Microphone",
-        name: "Audio-Technica ATH-M20x Headset",
+        name: "Audio-Technica mic 3",
         description:
             "Studio monitor headphones with a comfortable over-ear design and a built-in microphone, suitable for content creation and gaming.",
         price: 129.99,
-        image: "https://images.sweetwater.com/images/items/699/ATH_M20x_thumb.jpg",
+        image: "https://d1aeri3ty3izns.cloudfront.net/media/51/518389/600/preview.jpg",
     },
     {
         id: 10,
@@ -92,7 +92,7 @@ const MicrophoneDumyData = [
         description:
             "Versatile studio condenser microphone known for its detailed sound and wide range of applications, including vocals, instruments, and overheads.",
         price: 649.99,
-        image: "https://www.akg.com/sites/default/files/2020-06/C414_XLS_Hero_1600x800.png",
+        image: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_24/240605/9280275_800.jpg",
     },
     {
         id: 11,
@@ -101,7 +101,7 @@ const MicrophoneDumyData = [
         description:
             "USB condenser microphone popular for podcasting, streaming, and home recording, offering multiple pickup patterns and on-board controls.",
         price: 129.99,
-        image: "https://bluemic.com/wp-content/uploads/2020/01/Yeti-Black_Product-Hero.png",
+        image: "https://static.bax-shop.es/image/product/32980/3128336/4d752202/163351694504%20Blue%20Yeti%20Pro%20-%203Qtr%20Left.jpg",
     },
 
     // Large Diaphragm Condenser Microphones
@@ -112,7 +112,7 @@ const MicrophoneDumyData = [
         description:
             "Legendary large diaphragm condenser microphone prized for its exceptional sound quality and versatility in professional studios.",
         price: 6499.99,
-        image: "https://www.neumann.com/fileadmin/user_upload/ produktów/Mikrofone/Studiomikrofone/U_87_Ai/U_87_Ai_front.png",
+        image: "https://www.proaudiodesign.com/cdn/shop/products/NEM-U87AIMTSETZ_E.JPG?v=1571499638&width=2048",
     },
     {
         id: 13,
@@ -121,7 +121,7 @@ const MicrophoneDumyData = [
         description:
             "High-fidelity large diaphragm condenser microphone delivering clear and detailed audio, suitable for vocals, instruments, and orchestral recordings.",
         price: 999.99,
-        image: "https://images.sweetwater.com/images/items/699/AT4040_thumb.jpg",
+        image: "https://rvb-img.reverb.com/image/upload/s---V2hLesZ--/f_auto,t_supersize/v1444438186/wyneqibprc04nhpilrnw.jpg",
     },
 
     // USB Microphones
@@ -132,7 +132,7 @@ const MicrophoneDumyData = [
         description:
             "Affordable and easy-to-use USB microphone ideal for podcasting, video conferencing, and basic home recording applications.",
         price: 69.99,
-        image: "https://www.samsontech.com/sites/default/files/styles/product_detail/public/products/MeteorMic_ProductImage.png",
+        image: "https://d1aeri3ty3izns.cloudfront.net/media/64/643883/600/preview.jpg",
     },
     {
         id: 15,
@@ -141,7 +141,7 @@ const MicrophoneDumyData = [
         description:
             "Compact and portable USB condenser microphone offering high-quality audio for recording vocals, instruments, and voiceovers.",
         price: 99.99,
-        image: "https://www.rode.com/images/products/nt-usb_mini_front.png",
+        image: "https://d1aeri3ty3izns.cloudfront.net/media/54/546970/600/preview_1.jpg",
     },
 
     // Shotgun Microphones
@@ -152,7 +152,7 @@ const MicrophoneDumyData = [
         description:
             "Supercardioid shotgun microphone prized for its tight pickup pattern and exceptional audio quality in film, television, and video production.",
         price: 1299.99,
-        image: "https://en-de.sennheiser.com/image/mkh-416_thumb.png",
+        image: "https://d1aeri3ty3izns.cloudfront.net/media/65/651805/600/preview.jpg",
     },
     {
         id: 17,
@@ -161,10 +161,8 @@ const MicrophoneDumyData = [
         description:
             "Lightweight and versatile shotgun microphone ideal for capturing crisp audio in film, video, and broadcast applications.",
         price: 299.99,
-        image: "https://www.rode.com/images/products/ntg2_front.png",
+        image: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_17/179393/7913827_800.jpg",
     },
-    // Instrument Microphones (continued)
-    // Instrument Microphones
     {
         id: 18,
         category: "Instrument Microphone",
@@ -172,7 +170,7 @@ const MicrophoneDumyData = [
         description:
             "Dynamic instrument microphone known for its warm and natural sound, ideal for miking instruments like guitars, brass, and vocals on stage.",
         price: 199.99,
-        image: "https://images.sweetwater.com/images/items/699/ATM6100_thumb.jpg",
+        image: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_19/192538/14560943_800.jpg",
     },
 
     {
@@ -182,7 +180,7 @@ const MicrophoneDumyData = [
         description:
             "Dynamic instrument microphone designed for capturing the bright sound of snare drums and toms, with a tight pickup pattern for focused audio.",
         price: 149.99,
-        image: "https://en-de.sennheiser.com/image/e-905_thumb.png",
+        image: "https://static.bax-shop.es/image/product/22087/139725/9ceb617c/Sennheiser_E_905_dynamische_instrumentmicrofoon.jpg",
     },
 
     // Boundary Microphones
@@ -193,7 +191,7 @@ const MicrophoneDumyData = [
         description:
             "Low-profile boundary microphone ideal for capturing clear audio in conference rooms, houses of worship, and other fixed-installation applications.",
         price: 199.99,
-        image: "https://shure.com/media/product/xl/mx418se_xl.png",
+        image: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_14/149384/11348347_800.jpg",
     },
 ];
 

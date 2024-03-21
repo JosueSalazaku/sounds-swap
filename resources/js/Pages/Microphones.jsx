@@ -14,7 +14,7 @@ function Microphones() {
         <main className="my-12 w-screen  flex flex-col justify-center items-center">
             <SearchBar />
             <OptionsButtons />
-            {MicrophoneDumyData.map((Lights, index) =>
+            {MicrophoneDumyData.map((Micro, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
                         {MicrophoneDumyData.slice(index, index + 4).map(
