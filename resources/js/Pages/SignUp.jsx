@@ -28,7 +28,17 @@ function SignUp() {
                     <input type="text" className="rounded-md" />
                     <input type="password" className="rounded-md" />
                 </div>
-                <button className="bg-primary h-10 font-bold text-white rounded-md">Registger</button>
+                <button className="bg-primary h-10 font-bold text-white rounded-md">
+                    Registger
+                </button>
+                <div className="flex flex-col border-t pt-5 border-accent mt-5 gap-5">
+                    <button className="border-2 h-10 font-bold text-black rounded-md">
+                        GOOGLE
+                    </button>
+                    <button className="border-2 h-10 font-bold text-black rounded-md">
+                        Apple
+                    </button>
+                </div>
             </form>
         </main>
     );
