@@ -1,4 +1,5 @@
 import { Link, Head } from "@inertiajs/react";
+import HeroSectionCrowd from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/HeroSectionCrowd.png"
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
