@@ -17,7 +17,7 @@ function SignUp() {
                 action=""
                 className="flex flex-col border mt-20 border-black rounded-md p-20"
             >
-                <h2 className="font-black py-5 text-2xl">
+                <h2 className="font-black my-10 text-2xl">
                     Sign up for a free account
                 </h2>
                 <div className="flex flex-row gap-5">
@@ -32,10 +32,10 @@ function SignUp() {
                     Registger
                 </button>
                 <div className="flex flex-col border-t pt-5 border-accent mt-5 gap-5">
-                    <button className="border-2 h-10 font-bold text-black rounded-md">
+                    <button className="border-2 h-10 font-bold text-black rounded-md hover:bg-gray-200">
                         GOOGLE
                     </button>
-                    <button className="border-2 h-10 font-bold text-black rounded-md">
+                    <button className="border-2 h-10 font-bold text-black rounded-md hover:bg-gray-200">
                         Apple
                     </button>
                 </div>
