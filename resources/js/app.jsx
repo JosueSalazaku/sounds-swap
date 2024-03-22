@@ -14,7 +14,7 @@ import MixingBoard from "./Pages/MixingBoard";
 import Microphones from "./Pages/Microphones";
 import Monitors from "./Pages/Monitors";
 import SoundSystems from "./Pages/SoundSystems";
-import Prod from "./Pages/Prod";
+import CordCables from "./Pages/CordCables";
 
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
@@ -45,7 +45,7 @@ createInertiaApp({
                     <Route path="/Microphones" element={<Microphones />} />
                     <Route path="/Monitors" element={<Monitors />} />
                     <Route path="/SoundSystems" element={<SoundSystems />} />
-                    <Route path="/Prod" element={<Prod />} />
+                    <Route path="/CordCables" element={<CordCables />} />
                 </Routes>
             </Router>
         );
