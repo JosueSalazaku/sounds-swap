@@ -14,25 +14,6 @@ function Contact({token}) {
   const handleSubmit = (event) => {
     event.preventDefault();
     post(route("contact.store"))
-
-    useEffect(() => {
-      if (submitted && Object.keys(errors).length === 0) {
-        setSubmitted(false)
-        setTimeout(() => setShowMessage(true), 500)
-      }
-    }, [submitted, errors])
-  
-    const [showMessage, setShowMessage] = useState(false)
-  
-    if (showMessage) {
-      return (
-        <div className="max-w-md p-6 mx-auto mt-8 bg-white rounded shadow-md">
-          <div className="p-3 text-green-600">
-            Message sent successfully!
-          </div>
-        </div>
-      )
-    }
   };
 
 
