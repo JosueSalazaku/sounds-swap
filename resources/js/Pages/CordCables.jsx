@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MonitorsDummyData from "@/DummyData/MonitorDummyData";
+import CordsCablesDummyData from "@/DummyData/CordsCablesDummyData";
 import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
@@ -14,10 +14,10 @@ function Monitors() {
         <main className="my-12 w-screen  flex flex-col justify-center items-center">
             <SearchBar />
             <OptionsButtons />
-            {MonitorsDummyData.map((Monitors, index) =>
+            {CordsCablesDummyData.map((Cords, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
-                        {MonitorsDummyData.slice(index, index + 4).map(
+                        {CordsCablesDummyData.slice(index, index + 4).map(
                             (item) => (
                                 <div
                                     key={item.id}

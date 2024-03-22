@@ -14,7 +14,7 @@ import MixingBoard from "./Pages/MixingBoard";
 import Microphones from "./Pages/Microphones";
 import Monitors from "./Pages/Monitors";
 import SoundSystems from "./Pages/SoundSystems";
-import Prod from "./Pages/Prod";
+import CordCables from "./Pages/CordCables";
 
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
@@ -29,26 +29,25 @@ createInertiaApp({
         return pages[`./Pages/${name}.jsx`];
     },
     setup({ el, App, props }) {
-        const AppRoutes = () => (
-            <Routes>
-                <Route exact path="/" element={<App {...props} />} />
-                <Route path="/AboutUs" element={<AboutUs />} />
-                <Route path="/Products" element={<Products />} />
-                <Route path="/Pricing" element={<Pricing />} />
-                <Route path="/Community" element={<Community />} />
-                <Route path="/SignUp" element={<SignUp />} />
-                <Route path="/Contact" element={<Contact />} />
-                <Route path="/SignIn" element={<SignIn />} />
-                <Route path="/SignUp" element={<SignUp />} />
-            </Routes>
-        );
-
         createRoot(el).render(
             <Router>
-                <>
-                    <Header />
-                    <AppRoutes />
-                </>
+                <Header />
+                <Routes>
+                    <Route exact path="/" element={<App {...props} />} />
+                    <Route path="/AboutUs" element={<AboutUs />} />
+                    <Route path="/Products" element={<Products />} />
+                    <Route path="/Pricing" element={<Pricing />} />
+                    <Route path="/Community" element={<Community />} />
+                    <Route path="/SignUp" element={<SignUp />} />
+                    <Route path="/Contact" element={<Contact />} />
+                    <Route path="/SignIn" element={<SignIn />} />
+                    <Route path="/Lighting" element={<Lighting />} />
+                    <Route path="/MixingBoard" element={<MixingBoard />} />
+                    <Route path="/Microphones" element={<Microphones />} />
+                    <Route path="/Monitors" element={<Monitors />} />
+                    <Route path="/SoundSystems" element={<SoundSystems />} />
+                    <Route path="/Prod" element={<Prod />} />
+                </Routes>
             </Router>
         );
     },
