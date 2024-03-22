@@ -46,8 +46,9 @@ createInertiaApp({
                     <Route path="/Microphones" element={<Microphones />} />
                     <Route path="/Monitors" element={<Monitors />} />
                     <Route path="/SoundSystems" element={<SoundSystems />} />
-                    <Route path="/Prod" element={<Prod />} />
+                    {/*<Route path="/Prod" element={<Prod /> />.*/}
                 </Routes>
+                <Footer />
             </Router>
         );
     },
