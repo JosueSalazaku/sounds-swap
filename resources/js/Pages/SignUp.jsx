@@ -21,12 +21,12 @@ function SignUp() {
                     Sign up for a free account
                 </h2>
                 <div className="flex flex-row gap-5">
-                    <input type="text" className="rounded-md" />
-                    <input type="password" className="rounded-md" />
+                    <input type="text" placeholder="Last Name" className="rounded-md" />
+                    <input type="text" placeholder="Frist Name" className="rounded-md" />
                 </div>
                 <div className="mt-5 mb-5 flex flex-col gap-5">
-                    <input type="text" className="rounded-md" />
-                    <input type="password" className="rounded-md" />
+                    <input type="text" placeholder="@" className="rounded-md" />
+                    <input type="password" placeholder="password" className="rounded-md" />
                 </div>
                 <button className="bg-primary h-10 font-bold text-white rounded-md">
                     Registger
