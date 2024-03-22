@@ -21,9 +21,7 @@ function Monitors() {
                             (item) => (
                                 <div
                                     key={item.id}
-                                    className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"
-                                    onClick={() => handleItemClick(item)}
-                                >
+                                    className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md">
                                     <div className="flex flex-row-reverse">
                                         <img
                                             src="/images/favorite-bookmark-svgrepo-com.svg"
@@ -35,6 +33,7 @@ function Monitors() {
                                         src={item.image}
                                         alt={item.name}
                                         className="h-44 w-48 self-center mt-4"
+                                        onClick={() => handleItemClick(item)}
                                     />
                                     <h3 className="font-bold m-2 pl-7">
                                         {item.name}
