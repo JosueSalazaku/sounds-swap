@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller; // Import the base controller class
-use App\Models\Contact; // Import the Contact model
 
 class ContactController extends Controller
 {
@@ -14,7 +13,7 @@ class ContactController extends Controller
         $validatedData = $request->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'message' => 'required',
+            'message' => 'required'
         ]);
 
         // Create a new Contact model instance with the validated data

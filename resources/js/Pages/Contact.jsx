@@ -13,34 +13,28 @@ function Contact({token}) {
 });
   const handleSubmit = (event) => {
     event.preventDefault();
-    post(route("contact.store"));
-  }
-    
-    /* try {
-      const response = await fetch('/Contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-CSRF-TOKEN': token
-        },
-        body: JSON.stringify({ name, email, message }),
-      });
-  
-      if (response.ok) {
-        setName('');
-        setEmail('');
-        setMessage('');
-        setSubmitted(true);
-      } else {
-        // Handle server-side errors or other non-success HTTP responses
-        console.error('Failed to submit form:', response.statusText);
+    post(route("contact.store"))
+
+    useEffect(() => {
+      if (submitted && Object.keys(errors).length === 0) {
+        setSubmitted(false)
+        setTimeout(() => setShowMessage(true), 500)
       }
-    } catch (error) {
-      // Handle network errors
-      console.error('Network error:', error);
-    }
-  }; */
+    }, [submitted, errors])
   
+    const [showMessage, setShowMessage] = useState(false)
+  
+    if (showMessage) {
+      return (
+        <div className="max-w-md p-6 mx-auto mt-8 bg-white rounded shadow-md">
+          <div className="p-3 text-green-600">
+            Message sent successfully!
+          </div>
+        </div>
+      )
+    }
+  };
+
 
   return (
     <div className="max-w-md p-6 mx-auto mt-8 bg-white rounded shadow-md">
@@ -54,7 +48,7 @@ function Contact({token}) {
             id="name"
             type="text"
             value={data.name}
-            onChange={(event) => setData("name",event.target.value)}
+            onChange={(event) => setData("name", event.target.value)}
           />
         </div>
         <div className="mb-4">
@@ -66,7 +60,7 @@ function Contact({token}) {
             id="email"
             type="email"
             value={data.email}
-            onChange={(event) => setData("email",event.target.value)}
+            onChange={(event) => setData("email", event.target.value)}
           />
         </div>
         <div className="mb-4">
@@ -77,7 +71,7 @@ function Contact({token}) {
             className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
             id="message"
             value={data.message}
-            onChange={(event) => setData('message',event.target.value)}
+            onChange={(event) => setData("message", event.target.value)}
           />
         </div>
         <div className="mb-4">

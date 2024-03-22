@@ -1,12 +1,11 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use App\Http\Controllers\ContactController;
 
-Route::post('/Contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -25,7 +24,7 @@ Route::get('/Products', function () {
     return Inertia::render(('Products'));
 });
 
-Route::get('/Contact', function () {
+Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
 
