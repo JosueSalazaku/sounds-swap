@@ -14,7 +14,7 @@ function Monitors() {
         <main className="my-12 w-screen  flex flex-col justify-center items-center">
             <SearchBar />
             <OptionsButtons />
-            {MonitorsDummyData.map((Lights, index) =>
+            {MonitorsDummyData.map((Monitors, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
                         {MonitorsDummyData.slice(index, index + 4).map(
