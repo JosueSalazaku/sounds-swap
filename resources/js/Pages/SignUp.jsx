@@ -13,15 +13,22 @@ function SignUp() {
                     free.
                 </h3>
             </div>
-            <form action="" className="flex flex-col border mt-20 border-black rounded-md p-20">
-                <h2 className="font-black py-5 text-2xl">Sign up for a free account</h2>
-                <div className="flex flex-row space-x-5 mb-5">
-                    <input type="text" />
-                    <input type="text" />
+            <form
+                action=""
+                className="flex flex-col border mt-20 border-black rounded-md p-20"
+            >
+                <h2 className="font-black py-5 text-2xl">
+                    Sign up for a free account
+                </h2>
+                <div className="flex flex-row gap-5">
+                    <input type="text" className="rounded-md" />
+                    <input type="password" className="rounded-md" />
                 </div>
-                <input type="text" />
-          <input type="text" />
-          <button>Registger</button>
+                <div className="mt-5 mb-5 flex flex-col gap-5">
+                    <input type="text" className="rounded-md" />
+                    <input type="password" className="rounded-md" />
+                </div>
+                <button className="bg-primary h-10 font-bold text-white rounded-md">Registger</button>
             </form>
         </main>
     );
