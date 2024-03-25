@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -18,9 +19,8 @@ Route::get('/Welcome', function () {
     return Inertia::render(('Welcome'));
 });
 
-Route::get('/Products', function () {
-    return Inertia::render(('Products'));
-});
+
+Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/Contact', function () {
     return Inertia::render(('Contact'));
