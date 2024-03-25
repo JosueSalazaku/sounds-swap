@@ -46,6 +46,10 @@ Route::get('/SignUp', function () {
     return Inertia::render(('SignUp'));
 });
 
+Route::get('/Dashboard', function () {
+    return Inertia::render(('Dashboard'));
+});
+
 Route::get('/Lights', function () {
     return Inertia::render(('Lights'));
 });
