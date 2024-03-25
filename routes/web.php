@@ -20,7 +20,7 @@ Route::get('/Welcome', function () {
 });
 
 
-Route::get('/products', [ProductController::class, 'index']);
+Route::get('/Products', [ProductController::class, 'index']);
 
 Route::get('/Contact', function () {
     return Inertia::render(('Contact'));
