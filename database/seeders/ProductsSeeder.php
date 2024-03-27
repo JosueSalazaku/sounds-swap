@@ -11,6 +11,7 @@ class ProductsSeeder extends Seeder
 {
     public function run()
     {
+        
         Products::create([
             'category_id' => 1, // Assuming the category ID for "Lighting"
             'name' => 'LED Stage Light',
@@ -29,16 +30,6 @@ class ProductsSeeder extends Seeder
             'slug' => Str::slug('Digital Mixing Console'),
             'imgURL' => 'https://example.com/mixing-board.jpg',
             'brand' => 'Behringer',
-        ]);
-
-        Products::create([
-            'category_id' => 1,
-            'name' => 'LED Stage Light',
-            'description' => 'Illuminate your stage with this powerful LED stage light. Perfect for concerts, performances, and events.',
-            'price' => 99.99,
-            'slug' => Str::slug('LED Stage Light'),
-            'imgURL' => 'https://res.cloudinary.com/cash-crusaders/image/upload/f_auto,fl_lossy,h_1000,q_auto,w_1000/v1642057859/NewGoods/nkyjsfbaopoixjnbkvnk',
-            'brand' => 'Chauvet DJ',
         ]);
       
         Products::create([        
@@ -426,4 +417,12 @@ class ProductsSeeder extends Seeder
         ]);
 
     }
+
+        // Function to generate a unique slug
+        private function generateUniqueSlug($name)
+        {
+            $slug = Str::slug($name);
+            $count = Products::where('slug', 'like', $slug.'%')->count();
+            return $count ? "{$slug}-{$count}" : $slug;
+        }
 }
