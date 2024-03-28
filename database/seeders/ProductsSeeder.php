@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use Database\Seeders\SlugGenerator;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Products;
@@ -415,14 +415,9 @@ class ProductsSeeder extends Seeder
             'imgURL' => 'https://www.omega.be/images/ashx/presonus-studiolive-16.0.2-usb-digital-mixer-bin1.jpeg?s_id=PRES0EF3DF&imgfield=s_imagebin1&imgwidth=1200&imgheight=1200',
             'brand' => 'PreSonus',
         ]);
-
     }
 
-        // Function to generate a unique slug
-        private function generateUniqueSlug($name)
-        {
-            $slug = Str::slug($name);
-            $count = Products::where('slug', 'like', $slug.'%')->count();
-            return $count ? "{$slug}-{$count}" : $slug;
-        }
+// Function to generate a unique slug
+ 
+
 }
