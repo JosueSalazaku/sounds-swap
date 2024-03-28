@@ -11,106 +11,116 @@ class ProductsSeeder extends Seeder
 {
     public function run()
     {
-
         Products::create([
-            'category_id' => 5,
-            'name' => 'S1 Pro',
-            'description' => 'Portable PA system with Bluetooth streaming, battery-powered operation, and multiple mounting options.',
-            'price' => 599.00,
-            'slug' => Str::slug('S1 Pro'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-3702587700f4e6bb__hmac-84065a5dd2f9a7db5f97a5f472b00ff5d9137e68/images/items/750/S1Pro-large.jpg',
-            'brand' => 'Bose',
-        ]);
-
-        Products::create([
-            'category_id' => 5,
-            'name' => 'QSC CP8',
-            'description' => 'Compact powered loudspeaker with 1000 Watts of power, 8-inch woofer, and advanced DSP for consistent performance.',
-            'price' => 399.99,
-            'slug' => Str::slug('QSC CP8'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-d38c0167dd77df3b__hmac-2d6568691a03e2a2618cd8913c8d9469e601e23c/images/items/750/CP8-large.jpg',
-            'brand' => 'QSC',
+            'category_id' => 6,
+            'name' => 'Stage Snake',
+            'description' => 'Multi-channel stage snake with XLR connectors for sending audio signals from the stage to the mixing console, available in various lengths.',
+            'price' => 299.99,
+            'slug' => Str::slug('Stage Snake'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-6d2e4e9569e3c686__hmac-9c90db',
+            'brand' => 'Ugreen',
         ]);
         
         Products::create([
-            'category_id' => 5,
-            'name' => 'Electro-Voice ZLX-15BT',
-            'description' => 'Powered loudspeaker with Bluetooth audio streaming, 1000 Watts of power, and EV\'s QuickSmartDSP for easy setup and control.',
-            'price' => 499.00,
-            'slug' => Str::slug('Electro-Voice ZLX-15BT'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-d38c0167dd77df3b__hmac-2d6568691a03e2a2618cd8913c8d9469e601e23c/images/items/750/ZLX15BT-large.jpg',
-            'brand' => 'Electro-Voice',
+            'category_id' => 6,
+            'name' => 'Speaker Cable',
+            'description' => 'Heavy-duty speaker cable with SpeakON connectors for connecting amplifiers to passive speakers in professional sound reinforcement systems.',
+            'price' => 24.99,
+            'slug' => Str::slug('Speaker Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-d431b292681e5090__hmac-1c7a3a',
+            'brand' => 'Belkin',
         ]);
         
         Products::create([
-            'category_id' => 5,
-            'name' => 'JBL EON208P',
-            'description' => 'Portable PA system with 300 Watts of power, 8-channel mixer, and two 8-inch speakers for versatile sound reinforcement.',
-            'price' => 699.00,
-            'slug' => Str::slug('JBL-EON208P'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-3a0d2d8927ee1729__hmac-59f5d9a04fcff9e7d8edc7b49d7bb935ccf6d21f/images/items/750/EON208P-large.jpg',
-            'brand' => 'JBL',
+            'category_id' => 6,
+            'name' => 'Patch Bay',
+            'description' => 'Rackmount patch bay for organizing and routing audio signals between various devices in a studio or live sound setup.',
+            'price' => 149.99,
+            'slug' => Str::slug('Patch Bay'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-c0e035fd64c1de58__hmac-2c20f3',
+            'brand' =>  'Anker',
         ]);
         
         Products::create([
-            'category_id' => 5,
-            'name' => 'Mackie Reach',
-            'description' => 'All-in-one professional PA system with 720 Watts of power, built-in 6-channel digital mixer, and wireless streaming via Bluetooth.',
-            'price' => 799.99,
-            'slug' => Str::slug('Mackie Reach'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-317a8d1535cc62b4__hmac-6cfc8ed55a10aa77a56d86d8d1c41dc291f9eb5a/images/items/750/Reach-large.jpg',
-            'brand' => 'Mackie',
+            'category_id' => 6,
+            'name' => 'Coaxial Cable',
+            'description' => 'High-quality coaxial cable for transmitting audio and video signals, suitable for connecting antennas, receivers, and distribution systems.',
+            'price' => 18.99,
+            'slug' => Str::slug('Coaxial Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-0f6a8120b3e28e0b__hmac-2263d7',
+            'brand' => 'Anker',
         ]);
         
         Products::create([
-            'category_id' => 5,
-            'name' => 'S1 Pro Multi-Position PA System',
-            'description' => 'Portable PA system with a built-in 3-channel mixer, Bluetooth streaming, and rechargeable battery, suitable for various applications.',
-            'price' => 599.00,
-            'slug' => Str::slug('S1 Pro Multi-Position PA System'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-17c84c9d495f1bf4__hmac-1a143b4ab5fb6e5cf2366edc68cc0458f9b2ed6b/images/items/750/S1ProLarge-large.jpg',
-            'brand' => 'Bose',
-        ]);
-        
-        Products::create([
-            'category_id' => 5,
-            'name' => 'QSC K8.2',
-            'description' => 'Compact powered loudspeaker with 2000 Watts of power, 8-inch woofer, and advanced DSP for precise sound reproduction.',
-            'price' => 699.99,
-            'slug' => Str::slug('QSC K8.2'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-ba27951794cd39e2__hmac-2e8c7c3a8793dcbb91b31c80c52e067218476d2b/images/items/750/K8.2-large.jpg',
-            'brand' => 'QSC',
-        ]);
-        
-        Products::create([
-            'category_id' => 5,
-            'name' => 'Yamaha STAGEPAS-1K',
-            'description' => 'Portable PA system with 1000 Watts of power, 12-channel mixer, and Bluetooth audio streaming for easy setup and flexible use.',
-            'price' => 1199.99,
-            'slug' => Str::slug('Yamaha STAGEPAS-1K'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-d6c58fd7f55a2455__hmac-4bc3d5eb1546a2fde54a90f2cbdbe6316e401c7b/images/items/750/STAGEPAS1K-large.jpg',
-            'brand' => 'Yamaha',
-        ]);
-        
-        Products::create([
-            'category_id' => 5,
-            'name' => 'RCF-EVOX JMIX8',
-            'description' => 'Portable array system with an 8-channel digital mixer, Bluetooth audio streaming, and powerful sound performance.',
-            'price' => 1299.00,
-            'slug' => Str::slug('RCF-EVOX JMIX8'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-0fbbbe5f29f524a6__hmac-065a108ed946883e495ce2f7aa416ce36e26aa94/images/items/750/EVOXJMIX8-large.jpg',
-            'brand' => 'RCF',
-        ]);
-        
-        Products::create([
-            'category_id' => 5,
-            'name' => 'Behringer Europort MPA40BT-PROO',
-            'description' => 'Portable PA system with built-in battery, Bluetooth streaming, and 40 Watts of power, ideal for small events and gatherings.',
-            'price' => 219.99,
-            'slug' => Str::slug('Behringer Europort MPA40BT-PROO'),
-            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-0de93b83a44cf179__hmac-73be20cb6bb43a94a9f47be76adde26830d9c335/images/items/750/MPA40BTPro-large.jpg',
-            'brand' => 'Behringer',
+            'category_id' => 6,
+            'name' => 'Stage Box',
+            'description' => 'Durable stage box with multiple XLR inputs and outputs, designed for easy cable management and signal routing on stage.',
+            'price' => 199.99,
+            'slug' => Str::slug('Stage Box'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-191cb6b83d0d3a4a__hmac-59a866',
+            'brand' => 'Belkin', 
         ]);    
+        
+        Products::create([
+            'category_id' => 6,
+            'name' => 'Multicore Cable',
+            'description' => 'Heavy-duty multicore cable with multiple channels for sending audio signals from the stage to the front-of-house mixer, available in various configurations.',
+            'price' => 499.99,
+            'slug' => Str::slug('Multicore Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-6425ff0a42a009d2__hmac-fbf4a4',
+            'brand' => 'Belkin',
+        ]);
+        
+        Products::create([
+            'category_id' => 6,
+            'name' => 'Instrument Patch Cable',
+            'description' => 'High-quality patch cable with 1/4-inch connectors for connecting instruments to pedals, amplifiers, and other audio devices.',
+            'price' => 8.99,
+            'slug' => Str::slug('Instrument Patch Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-2b0e7e07146f4788__hmac-58e2e2',
+            'brand' =>  'Anker',
+        ]);
+
+        Products::create([
+            'category_id' => 6,
+            'name' => 'PowerCON Extension Cable',
+            'description' => 'Heavy-duty PowerCON extension cable for reliable power distribution in professional audio and lighting setups.',
+            'price' => 34.99,
+            'slug' => Str::slug('PowerCON Extension Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-1c7b1fe88315de3d__hmac-66bf',
+            'brand' => 'Ugreen',
+        ]);
+        
+        Products::create([
+            'category_id' => 6,
+            'name' => 'Ethernet Patch Cable',
+            'description' => 'High-quality Ethernet patch cable for connecting network devices in live sound setups, ensuring stable network connections.',
+            'price' => 11.99,
+            'slug' => Str::slug('Ethernet Patch Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-5226f5dd68a7dd39__hmac-ecf08b',
+            'brand' => 'Ugreen',
+        ]);
+        
+        Products::create([
+            'category_id' => 6,
+            'name' => 'USB Cable',
+            'description' => 'High-quality USB cable for connecting audio interfaces, MIDI controllers, and other USB-compatible devices.',
+            'price' => 8.99,
+            'slug' => Str::slug('USB Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-cd1d63729ac45b27__hmac-b18a20b5b236414c53574fb632b8b500ccfb8f8c/images/items/750/USBAB-6-large.jpg',
+            'brand' => 'Belkin',
+        ]);
+        
+        Products::create([
+            'category_id' => 6,
+            'name' => 'HDMI Cable',
+            'description' => 'High-speed HDMI cable for connecting video sources, projectors, and displays for video playback and presentations.',
+            'price' => 14.99,
+            'slug' => Str::slug('HDMI Cable'),
+            'imgURL' => 'https://media.sweetwater.com/api/i/q-82__ha-3c2cb9a59b2e28e0__hmac-01c24e6a4b2c70c7dfbc058002db90be2f2f3787/images/items/750/HDMI06-large.jpg',
+            'brand' => 'Anker',
+        ]);
+        
         
     }
  
