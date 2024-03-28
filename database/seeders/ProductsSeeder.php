@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use Database\Seeders\SlugGenerator;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Products;
@@ -11,6 +11,7 @@ class ProductsSeeder extends Seeder
 {
     public function run()
     {
+        
         Products::create([
             'category_id' => 1, // Assuming the category ID for "Lighting"
             'name' => 'LED Stage Light',
@@ -29,16 +30,6 @@ class ProductsSeeder extends Seeder
             'slug' => Str::slug('Digital Mixing Console'),
             'imgURL' => 'https://example.com/mixing-board.jpg',
             'brand' => 'Behringer',
-        ]);
-
-        Products::create([
-            'category_id' => 1,
-            'name' => 'LED Stage Light',
-            'description' => 'Illuminate your stage with this powerful LED stage light. Perfect for concerts, performances, and events.',
-            'price' => 99.99,
-            'slug' => Str::slug('LED Stage Light'),
-            'imgURL' => 'https://res.cloudinary.com/cash-crusaders/image/upload/f_auto,fl_lossy,h_1000,q_auto,w_1000/v1642057859/NewGoods/nkyjsfbaopoixjnbkvnk',
-            'brand' => 'Chauvet DJ',
         ]);
       
         Products::create([        
@@ -424,6 +415,9 @@ class ProductsSeeder extends Seeder
             'imgURL' => 'https://www.omega.be/images/ashx/presonus-studiolive-16.0.2-usb-digital-mixer-bin1.jpeg?s_id=PRES0EF3DF&imgfield=s_imagebin1&imgwidth=1200&imgheight=1200',
             'brand' => 'PreSonus',
         ]);
-
     }
+
+// Function to generate a unique slug
+ 
+
 }
