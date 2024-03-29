@@ -7,7 +7,7 @@ const dummyProductData = [
         description:
             "Illuminate your stage with this powerful LED stage light. Perfect for concerts, performances, and events.",
         price: 99.99,
-        image: "https://res.cloudinary.com/cash-crusaders/image/upload/f_auto,fl_lossy,h_1000,q_auto,w_1000/v1642057859/NewGoods/nkyjsfbaopoixjnbkvnk",
+        imgURL: "https://res.cloudinary.com/cash-crusaders/image/upload/f_auto,fl_lossy,h_1000,q_auto,w_1000/v1642057859/NewGoods/nkyjsfbaopoixjnbkvnk",
         brand: "Chauvet DJ",
     },
     {
@@ -17,7 +17,7 @@ const dummyProductData = [
         description:
             "Create stunning lighting effects with this versatile par can light. Ideal for DJs, bands, and clubs.",
         price: 79.99,
-        image: "https://www.bhphotovideo.com/cdn-cgi/image/format=auto,fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/american_dj_parz1003k_3200k_100_watt_led_1498649044_1346539.jpg",
+        imgURL: "https://www.bhphotovideo.com/cdn-cgi/image/format=auto,fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/american_dj_parz1003k_3200k_100_watt_led_1498649044_1346539.jpg",
     },
     // Mixing Board
     {
@@ -27,7 +27,7 @@ const dummyProductData = [
         description:
             "Take control of your audio with this advanced digital mixer. Perfect for studio recordings and live performances.",
         price: 499.99,
-        image: "https://images.musicstore.de/images/1280/behringer-x32-digitale-mixer-_1_REC0008523-000.jpg",
+        imgURL: "https://images.musicstore.de/images/1280/behringer-x32-digitale-mixer-_1_REC0008523-000.jpg",
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ const dummyProductData = [
         description:
             "Achieve a classic sound with this reliable analog mixer. Great for small venues and home studios.",
         price: 299.99,
-        image: "https://d1aeri3ty3izns.cloudfront.net/media/6/6876/600/preview_1.jpg",
+        imgURL: "https://d1aeri3ty3izns.cloudfront.net/media/6/6876/600/preview_1.jpg",
     },
     // Microphones
     {
@@ -46,7 +46,7 @@ const dummyProductData = [
         description:
             "Capture crisp vocals and instruments with this dynamic microphone. Ideal for stage performances and recordings.",
         price: 69.99,
-        image: "https://www.bhphotovideo.com/images/images2500x2500/Sennheiser_E935_E935_Handheld_Microphone_291872.jpg",
+        imgURL: "https://www.bhphotovideo.com/images/images2500x2500/Sennheiser_E935_E935_Handheld_Microphone_291872.jpg",
     },
     {
         id: 6,
@@ -55,7 +55,7 @@ const dummyProductData = [
         description:
             "Experience studio-quality recordings with this sensitive condenser microphone. Perfect for vocals and acoustic instruments.",
         price: 149.99,
-        image: "https://www.vandemoer.be/media/catalog/product/cache/d78a52a21d7590c375334cc513d10ca9/s/e/se-electronics-qrx1a-condenser-microphone-31933_b3swamifg91hfdnq.jpg",
+        imgURL: "https://www.vandemoer.be/media/catalog/product/cache/d78a52a21d7590c375334cc513d10ca9/s/e/se-electronics-qrx1a-condenser-microphone-31933_b3swamifg91hfdnq.jpg",
     },
     // Monitors
     {
@@ -65,7 +65,7 @@ const dummyProductData = [
         description:
             "Hear every detail of your audio with these high-fidelity studio monitor speakers. Essential for mixing and mastering.",
         price: 249.99,
-        image: "https://m.media-amazon.com/images/I/A1pdVoueIkL.jpg",
+        imgURL: "https://m.media-amazon.com/images/I/A1pdVoueIkL.jpg",
     },
     {
         id: 8,
@@ -74,7 +74,7 @@ const dummyProductData = [
         description:
             "Get clear and powerful sound on stage with this rugged stage monitor speaker. Perfect for bands and performers.",
         price: 199.99,
-        image: "https://eventstarts.com/cdn/shop/products/eventstarts_jbl_vrx915m_stage_monitor_speaker_4_grande.jpg?v=1640237561",
+        imgURL: "https://eventstarts.com/cdn/shop/products/eventstarts_jbl_vrx915m_stage_monitor_speaker_4_grande.jpg?v=1640237561",
     },
     // Sound Systems
     {
@@ -84,7 +84,7 @@ const dummyProductData = [
         description:
             "Take your sound anywhere with this portable PA system. Great for outdoor events, parties, and presentations.",
         price: 599.99,
-        image: "https://m.media-amazon.com/images/I/914BTR8wOsL._AC_SL1500_.jpg",
+        imgURL: "https://m.media-amazon.com/images/I/914BTR8wOsL._AC_SL1500_.jpg",
     },
     {
         id: 10,
@@ -93,7 +93,7 @@ const dummyProductData = [
         description:
             "Transform your living room into a cinematic experience with this high-quality home theater system. Enjoy movies, music, and games in surround sound.",
         price: 999.99,
-        image: "https://www.harmankardon.be/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw4b31988b/HK-Surround-Group1_Hero_1605x1605px.png",
+        imgURL: "https://www.harmankardon.be/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw4b31988b/HK-Surround-Group1_Hero_1605x1605px.png",
     },
     // Additional products...
     {
@@ -103,7 +103,7 @@ const dummyProductData = [
         description:
             "Create dynamic visual effects with this powerful strobe light. Ideal for DJs, clubs, and parties.",
         price: 129.99,
-        image: "https://m.media-amazon.com/images/I/613qjlaziJL._AC_UF894,1000_QL80_.jpg",
+        imgURL: "https://m.media-amazon.com/images/I/613qjlaziJL._AC_UF894,1000_QL80_.jpg",
     },
     {
         id: 12,
@@ -112,7 +112,7 @@ const dummyProductData = [
         description:
             "Enhance your lighting effects with this professional-grade fog machine. Perfect for creating atmosphere at events and performances.",
         price: 199.99,
-        image: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_40/403498/11733600_800.jpg",
+        imgURL: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_40/403498/11733600_800.jpg",
     },
     {
         id: 13,
@@ -121,7 +121,7 @@ const dummyProductData = [
         description:
             "Take your mixing skills on the go with this compact portable mixer. Great for small gigs and rehearsals.",
         price: 149.99,
-        image: "https://m.media-amazon.com/images/I/815-aoG4GZL._AC_UF894,1000_QL80_.jpg",
+        imgURL: "https://m.media-amazon.com/images/I/815-aoG4GZL._AC_UF894,1000_QL80_.jpg",
     },
     {
         id: 14,
@@ -130,7 +130,7 @@ const dummyProductData = [
         description:
             "Achieve professional live sound with this versatile live sound mixer. Ideal for bands, theaters, and houses of worship.",
         price: 799.99,
-        image: "https://www.beta3pro.com/uploads/products/md18/MD1%208.jpg",
+        imgURL: "https://www.beta3pro.com/uploads/products/md18/MD1%208.jpg",
     },
     {
         id: 15,
