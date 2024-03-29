@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
 import SignIn from "./Pages/SignIn";
+import Dashboard from "./Pages/Dashboard";
 import SignUp from "./Pages/SignUp";
 import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
@@ -41,6 +42,7 @@ createInertiaApp({
                     <Route path="/SignUp" element={<SignUp />} />
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/SignIn" element={<SignIn />} />
+                    <Route path="/Dashboard" element={<Dashboard />} />
                     <Route path="/Lighting" element={<Lighting />} />
                     <Route path="/MixingBoard" element={<MixingBoard />} />
                     <Route path="/Microphones" element={<Microphones />} />
