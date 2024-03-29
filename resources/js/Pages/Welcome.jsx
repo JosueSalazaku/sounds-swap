@@ -24,7 +24,16 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             </div>
             <div className="h-screen w-screen" >
                 <h2 className="text-4xl font-bold">Why SoundSwap?</h2>
+                <p>
+                    Welcome to SOUNDSWAP, your premier online marketplace dedicated exclusively to the world of audio equipment. Whether you're a professional sound engineer, an enthusiastic hobbyist, or someone stepping into the vibrant universe of audio production, SOUNDSWAP offers a seamless platform to buy and sell a wide range of high-quality audio gear. <br />
+                    From vintage amplifiers that carry the warmth of the past to cutting-edge digital interfaces that define the future of sound, our marketplace connects a passionate community of audiophiles and music creators. <br />
+                    With an unwavering commitment to quality, authenticity, and an exceptional customer experience, SOUNDSWAP empowers you to bring your audio visions to life, ensuring that every transaction is not just a trade but a step towards achieving sonic perfection. <br />
+                    Join us in our mission to make great sound accessible to all, fostering a world where the passion for audio thrives and resonates.
+                </p>
+                <button className="h-12 w-40 text-white bg-primary">Learn More !</button>
             </div>
+
+
         </main>
     );
 }
