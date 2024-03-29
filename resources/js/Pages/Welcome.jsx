@@ -18,8 +18,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             <div className="h-screen w-screen flex flex-col justify-start items-center" style={{ backgroundImage: `url(${CrowdHeroPic})`, height: '700px', backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <h1 className="font-extrabold text-primary mt-12 font-sans text-7xl text-center">SoundSwap <br /> The Place To Buy Or Sell <br /> Audio Equipement </h1>
                 <div className="mt-28 space-x-28">
-                <button className="h-12 w-40 text-white bg-primary">BUY</button>
-                <button className="h-12 w-40 text-white bg-primary">SELL</button>
+                <button className="px-12 bg-primary text-white p-2.5 rounded-lg focus:shadow-outline hover:bg-slate-800 font-semibold ">Brows Equipments</button>
+                <button className="px-12 bg-primary text-white p-2.5 rounded-lg focus:shadow-outline hover:bg-slate-800 font-semibold">List Your Items!</button>
                 </div>
             </div>
             <div className="h-screen w-screen" >
@@ -30,7 +30,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     With an unwavering commitment to quality, authenticity, and an exceptional customer experience, SOUNDSWAP empowers you to bring your audio visions to life, ensuring that every transaction is not just a trade but a step towards achieving sonic perfection. <br />
                     Join us in our mission to make great sound accessible to all, fostering a world where the passion for audio thrives and resonates.
                 </p>
-                <button className="h-12 w-40 text-white bg-primary">Learn More !</button>
+                <button className="bg-primary text-white p-2.5 rounded-lg hover:bg-slate-700 font-semibold">Learn More !</button>
             </div>
 
 
