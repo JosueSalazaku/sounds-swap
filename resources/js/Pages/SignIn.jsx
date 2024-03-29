@@ -38,7 +38,7 @@ function SignIn() {
                         Apple
                     </button>
                     <h1 className="mt-2 text-center">
-                        No account? <Link to="/Signin"><strong className="text-primary">Sign Up</strong></Link>
+                        No account? <Link to="/SignUp"><strong className="text-primary">Sign Up</strong></Link>
                     </h1>
                 </div>
             </form>

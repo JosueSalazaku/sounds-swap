@@ -2,12 +2,13 @@ const dummyProductData = [
     // Lighting
     {
         id: 1,
-        category: "Lighting",
+        category: 1,
         name: "LED Stage Light",
         description:
             "Illuminate your stage with this powerful LED stage light. Perfect for concerts, performances, and events.",
         price: 99.99,
         image: "https://res.cloudinary.com/cash-crusaders/image/upload/f_auto,fl_lossy,h_1000,q_auto,w_1000/v1642057859/NewGoods/nkyjsfbaopoixjnbkvnk",
+        brand: "Chauvet DJ",
     },
     {
         id: 2,
