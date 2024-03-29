@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "@/Components/SearchBar";
 import OptionsButtons from "@/Components/OptionsButtons";
-import ShowProductData from "@/Components/ShowProductData";
+import ProductDisplay from "@/Components/ProductDisplay";
 
 function Products() {
     return (
@@ -11,7 +11,7 @@ function Products() {
         >
             <SearchBar />
             <OptionsButtons />
-            <ShowProductData />
+            {/* <ProductDisplay /> */}
         </main>
     );
 }
