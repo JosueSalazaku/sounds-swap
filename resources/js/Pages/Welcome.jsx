@@ -1,5 +1,6 @@
 import { Link, Head } from "@inertiajs/react";
 import CrowdHeroPic from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/CrowdHeroPic.png";
+import LightEquipmentImage from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/LightEquipmentImage.jpg";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
@@ -72,7 +73,20 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     Learn More !
                 </button>
             </div>
-            <div></div>
+            <div>
+                <h3 className="text-right m-10 text-2xl font-bold text-left">
+                    Light Equipment
+                </h3>
+                <p className="p-10 m-10 text-right">
+                    Discover our "Light Equipment" section, where portability
+                    meets performance, featuring a curated selection of compact,
+                    easy-to-carry audio devices designed for creators on the
+                    move, without compromising on sound quality.
+                </p>
+                <button className="mb-3 ml-10 text-right px-20 bg-primary text-white p-2.5 rounded-lg hover:bg-slate-700 font-semibold">
+                    Go to Light Equipment
+                </button>
+            </div>
         </main>
     );
 }
