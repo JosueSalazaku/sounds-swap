@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CheckoutController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -30,7 +31,7 @@ Route::get('/AboutUs', function () {
     return Inertia::render(('AboutUs'));
 });
 
-Route::get('/Checkout', 'CheckoutController@index')->name('Checkout');
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
