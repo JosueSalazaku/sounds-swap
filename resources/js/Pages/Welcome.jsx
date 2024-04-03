@@ -90,7 +90,29 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         designed for creators on the move, without compromising
                         on sound quality.
                     </p>
-                    <button className="mt-10 bg-primary text-white p-2.5 rounded-lg hover:bg-slate-700 font-semibold ">
+                    <button className="mt-10 bg-primary text-white p-2.5 rounded-lg hover:bg-slate-700 font-semibold">
+                        Go to Light Equipment
+                    </button>
+                </div>
+            </div>
+            <div className="flex flex-col items-center bg-white border border-lime-200 rounded-lg shadow mx-20 mb-10 md:flex-row md:max-w-full hover:bg-white dark:border-lime-200 dark:bg-lime-200 dark:hover:bg-lime-300">
+                <img
+                    className="object-cover m-5 rounded-t-lg  md:h-auto md:w-90 md:rounded-md md:rounded-s-lg"
+                    src={LightEquipmentImage}
+                    alt=""
+                />
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                    <h3 className="mb-2 text-2-xl font-bold tracking-tight">
+                        Light Equipment
+                    </h3>
+                    <p className="mb-3 font-normal">
+                        Discover our "Light Equipment" section, where
+                        portability meets performance, featuring a curated
+                        selection of compact, easy-to-carry audio devices
+                        designed for creators on the move, without compromising
+                        on sound quality.
+                    </p>
+                    <button className="mt-10 bg-primary text-white p-2.5 rounded-lg hover:bg-slate-700 font-semibold">
                         Go to Light Equipment
                     </button>
                 </div>
