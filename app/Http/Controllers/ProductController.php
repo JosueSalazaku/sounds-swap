@@ -13,4 +13,12 @@ class ProductController extends Controller
         $products = Products::all();
         return Inertia::render('Products', ['products' => $products]);
     }
+
+    public function lighting()
+    {
+        $lighting = Products::where('category', 'lighting')->get();
+
+        return Inertia::render('Lighting', ['products' => $lighting]);
+    }
 }
+

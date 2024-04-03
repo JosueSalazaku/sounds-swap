@@ -1,8 +1,11 @@
 import { usePage } from '@inertiajs/inertia-react';
 
 const ProductDisplay = () => {
-    // Access the products data using the usePage hook
     const { products } = usePage().props;
+
+    const handleItemClick = (item) => {
+        // Handle item click logic here
+    };
 
     return (
         <main className="my-12 w-screen  flex flex-col justify-center items-center">

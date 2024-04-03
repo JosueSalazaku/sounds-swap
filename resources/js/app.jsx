@@ -41,7 +41,7 @@ createInertiaApp({
                     <Route path="/Pricing" element={<Pricing />} />
                     <Route path="/Community" element={<Community />} />
                     <Route path="/AboutUs" element={<AboutUs />} />
-                    <Route path="/Lighting" element={<Lighting />} />
+                    <Route path="/Lighting" element={<App {...props} />}  />
                     <Route path="/MixingBoard" element={<MixingBoard />} />
                     <Route path="/Microphones" element={<Microphones />} />
                     <Route path="/Monitors" element={<Monitors />} />
