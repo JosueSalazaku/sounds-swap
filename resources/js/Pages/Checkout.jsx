@@ -1,9 +1,11 @@
-
+import CartSummary from "@/Components/CartSummary";
 import React from "react";
 
 function Checkout() {
     return (
-        <div>This is the checkout page</div>
+        <div className="flex flex-col justify-start items-center">
+            <CartSummary />
+        </div>
     );
 }
 
