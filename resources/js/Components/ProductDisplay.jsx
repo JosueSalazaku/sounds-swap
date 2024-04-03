@@ -5,7 +5,7 @@ const ProductDisplay = () => {
     const { products } = usePage().props;
 
     return (
-        <main>
+        <main className="my-12 w-screen  flex flex-col justify-center items-center">
             {products.map((product, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
