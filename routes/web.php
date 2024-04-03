@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Products;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -20,7 +21,7 @@ Route::get('/Welcome', function () {
 });
 
 
-Route::get('/Products', [ProductController::class, 'index']);
+Route::get('/Products', [ProductController::class, 'index'])->name('Products.index');
 
 Route::get('/Contact', function () {
     return Inertia::render(('Contact'));

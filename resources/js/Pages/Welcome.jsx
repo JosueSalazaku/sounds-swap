@@ -1,5 +1,5 @@
 import { Link, Head } from "@inertiajs/react";
-import CrowdHeroPic from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/CrowdHeroPic.png";
+import CrowdHeroPic from "/public/images/CrowdHeroPic.png";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {

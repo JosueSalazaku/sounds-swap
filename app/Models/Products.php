@@ -12,21 +12,3 @@ class Products extends Model
     use HasFactory;
 }
 
-class SlugGenerator
-{
-    public static function generateUniqueSlug($name)
-    {
-        $slug = Str::slug($name);
-        $count = Products::where('slug', $slug)->count();
-        $uniqueSlug = $slug;
-        $suffix = 1;
-
-        while ($count > 0) {
-            $uniqueSlug = $slug . '-' . $suffix;
-            $count = Products::where('slug', $uniqueSlug)->count();
-            $suffix++;
-        }
-
-        return $uniqueSlug;
-    }
-}
