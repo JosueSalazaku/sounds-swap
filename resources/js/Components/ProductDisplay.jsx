@@ -18,7 +18,7 @@ const ProductDisplay = () => {
                                 key={item.id}
                                 className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"
                             >
-                                <div className="flex flex-row-reverse">
+                                <div className="flex flex-row-reverse ">
                                     <img
                                         src="/images/favorite-bookmark-svgrepo-com.svg"
                                         alt=""
