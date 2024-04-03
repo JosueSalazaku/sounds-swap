@@ -1,6 +1,10 @@
 import { Link, Head } from "@inertiajs/react";
+<<<<<<< HEAD
 import CrowdHeroPic from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/CrowdHeroPic.png";
 import LightEquipmentImage from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/LightEquipmentImage.jpg";
+=======
+import CrowdHeroPic from "/public/images/CrowdHeroPic.png";
+>>>>>>> 8904cb74cbf7896b27de5d2a1dc8705b22487f8f
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {

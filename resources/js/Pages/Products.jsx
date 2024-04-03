@@ -11,7 +11,7 @@ function Products() {
         >
             <SearchBar />
             <OptionsButtons />
-            {/* <ProductDisplay /> */}
+            <ProductDisplay />
         </main>
     );
 }
