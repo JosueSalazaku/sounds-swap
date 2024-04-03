@@ -10,9 +10,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        // Add any necessary logic here, such as retrieving products from a database
-        // For now, just render the "Products" view using Inertia
         $products = Products::all();
-        return Inertia::render('Products', ['products' => $products]);
+        return Inertia::render('Products/index', ['products' => $products]);
     }
 }

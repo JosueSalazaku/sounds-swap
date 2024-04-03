@@ -1,12 +1,10 @@
-import React from 'react';
-import { usePage } from '@inertiajs/react';
+import { usePage } from '@inertiajs/inertia-react';
 
 function ProductDisplay() {
-  // const { products } = usePage(); // Access data from props
+  const { products } = usePage(); // Access data from props
 
     return (
-      <>
-      </>
+      <></>
 
   );
 }

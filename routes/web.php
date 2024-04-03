@@ -21,7 +21,7 @@ Route::get('/Welcome', function () {
 });
 
 
-Route::get('/Products', [ProductController::class, 'index'])->name('Products.index');
+Route::get('/Products', [ProductController::class, 'index']);
 
 Route::get('/Contact', function () {
     return Inertia::render(('Contact'));
