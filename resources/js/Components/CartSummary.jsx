@@ -1,6 +1,14 @@
 import React from 'react';
 
-function CartSummary({ cartItems }) {
+function CartSummary({ productData }) {
+    // Check if productData is undefined or not an array
+    if (!productData || !Array.isArray(productData)) {
+        // Return null or any other fallback UI if productData is not valid
+        return null;
+    }
+
+    const cartItems = calculateCartItems(productData);
+
     return (
         <div className="cart-summary">
             <h2>Cart Summary</h2>
@@ -19,32 +27,24 @@ function CartSummary({ cartItems }) {
                     <tbody>
                         {cartItems.map(item => (
                             <tr key={item.id}>
-                                <td>
-                                    <div className="product-info">
-                                        <img src={item.image} alt={item.name} />
-                                        <div>
-                                            <h3>{item.name}</h3>
-                                        </div>
-                                    </div>
-                                </td>
+                                <td>{item.name}</td>
                                 <td>{item.quantity}</td>
                                 <td>${item.price.toFixed(2)}</td>
                                 <td>${(item.price * item.quantity).toFixed(2)}</td>
                             </tr>
                         ))}
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colSpan="3">Total:</td>
-                            <td>
-                                ${cartItems.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2)}
-                            </td>
-                        </tr>
-                    </tfoot>
+                    {/* Add total calculation here */}
                 </table>
-                        )} 
+            )}
         </div>
     );
 }
 
 export default CartSummary;
+
+// Function to calculate cart items from product data
+function calculateCartItems(productData) {
+    // Example: Filter products with quantity greater than 0
+    return productData.filter(product => product.quantity > 0);
+}
