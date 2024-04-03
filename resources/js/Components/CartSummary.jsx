@@ -42,7 +42,7 @@ function CartSummary({ cartItems }) {
                         </tr>
                     </tfoot>
                 </table>
-            )}
+                        )} 
         </div>
     );
 }

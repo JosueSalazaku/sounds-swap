@@ -5,7 +5,7 @@ function Checkout() {
     return (
         <div className="flex flex-col justify-start items-center">
             <CartSummary />
-        </div>
+    </div> 
     );
 }
 

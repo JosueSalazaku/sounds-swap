@@ -1,4 +1,5 @@
 // App.jsx
+import React from "react";
 import "./bootstrap";
 import "../css/app.css";
 import Header from "./Components/Header";
@@ -32,16 +33,16 @@ createInertiaApp({
     setup({ el, App, props }) {
         const AppRoutes = () => (
             <Routes>
-                <Route exact path="/" element={<App {...props} />} />
-                <Route path="/AboutUs" element={<AboutUs />} />
-                <Route path="/Products" element={<Products />} />
-                <Route path="/Pricing" element={<Pricing />} />
+                <Route exact path="/" element={<App {...props}/>} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/pricing" element={<Pricing />} />
                 <Route path="/Community" element={<Community />} />
                 <Route path="/SignUp" element={<SignUp />} />
-                <Route path="/Contact" element={<Contact />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/SignIn" element={<SignIn />} />
                 <Route path="/SignUp" element={<SignUp />} />
-                <Route path="/Checkout" element={<Checkout />} />
+                <Route path="/checkout" element={<Checkout />} />
             </Routes>
         );
 

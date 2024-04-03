@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, Head } from "@inertiajs/react";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
@@ -19,11 +20,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <div className="mt-28 space-x-28">
                 <button className="h-12 w-40 text-white bg-primary">BUY</button>
                 <button className="h-12 w-40 text-white bg-primary">SELL</button>
-                </div>
+                </ div>
             </div>
             <div className="h-screen w-screen" >
                 <h2 className="text-4xl font-bold">Why SoundSwap?</h2>
             </div>
+
         </main>
     );
 }
