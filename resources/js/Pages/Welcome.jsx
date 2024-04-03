@@ -1,10 +1,6 @@
 import { Link, Head } from "@inertiajs/react";
-<<<<<<< HEAD
-import CrowdHeroPic from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/CrowdHeroPic.png";
-import LightEquipmentImage from "/Users/alecv/OneDrive/Bureaublad/Becode/SoundSwapProject/sounds-swap/public/images/LightEquipmentImage.jpg";
-=======
 import CrowdHeroPic from "/public/images/CrowdHeroPic.png";
->>>>>>> 8904cb74cbf7896b27de5d2a1dc8705b22487f8f
+import LightEquipmentImage from "/public/images/LightEquipmentImage.jpg";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
@@ -77,20 +73,31 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     Learn More !
                 </button>
             </div>
-            <div>
-                <h3 className="text-right m-10 text-2xl font-bold text-left">
-                    Light Equipment
-                </h3>
-                <p className="p-10 m-10 text-right">
-                    Discover our "Light Equipment" section, where portability
-                    meets performance, featuring a curated selection of compact,
-                    easy-to-carry audio devices designed for creators on the
-                    move, without compromising on sound quality.
-                </p>
-                <button className="mb-3 ml-10 text-right px-20 bg-primary text-white p-2.5 rounded-lg hover:bg-slate-700 font-semibold">
-                    Go to Light Equipment
-                </button>
-            </div>
+            <a
+                href="#"
+                className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            >
+                <img
+                    className="object-cover w-full m-5 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-md md:rounded-s-lg"
+                    src={LightEquipmentImage}
+                    alt=""
+                />
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                    <h3 className="mb-2 text-2-xl font-bold tracking-tight">
+                        Light Equipment
+                    </h3>
+                    <p className="mb-3 font-normal">
+                        Discover our "Light Equipment" section, where
+                        portability meets performance, featuring a curated
+                        selection of compact, easy-to-carry audio devices
+                        designed for creators on the move, without compromising
+                        on sound quality.
+                    </p>
+                    {/*<button className="mb-3 ml-10 text-right px-20 bg-primary text-white p-2.5 rounded-lg hover:bg-slate-700 font-semibold">
+                        Go to Light Equipment
+            </button>*/}
+                </div>
+            </a>
         </main>
     );
 }
