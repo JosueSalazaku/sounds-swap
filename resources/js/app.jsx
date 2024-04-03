@@ -50,7 +50,6 @@ createInertiaApp({
                     <AppRoutes />
                     <Footer />
                 </ div>
-                </>
             </Router>
         );
     },
