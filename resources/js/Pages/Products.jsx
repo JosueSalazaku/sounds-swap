@@ -2,8 +2,10 @@ import React from "react";
 import SearchBar from "@/Components/SearchBar";
 import OptionsButtons from "@/Components/OptionsButtons";
 import ProductDisplay from "@/Components/ProductDisplay";
+import { usePage } from '@inertiajs/react'
 
 function Products() {
+
     return (
         <main
             main
@@ -17,3 +19,4 @@ function Products() {
 }
 
 export default Products;
+
