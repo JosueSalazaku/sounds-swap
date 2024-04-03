@@ -2,10 +2,11 @@ import React from 'react';
 import { usePage } from '@inertiajs/react';
 
 function ProductDisplay() {
-  const { products } = usePage(); // Access data from props
+  // const { products } = usePage(); // Access data from props
 
     return (
-      <></>
+      <>
+      </>
 
   );
 }
