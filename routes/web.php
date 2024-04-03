@@ -50,9 +50,9 @@ Route::get('/Dashboard', function () {
     return Inertia::render(('Dashboard'));
 });
 
-Route::get('/Lights', function () {
-    return Inertia::render(('Lights'));
-});
+
+Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting');
+
 
 Route::get('/Microphones', function () {
     return Inertia::render(('Microphones'));
