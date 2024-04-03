@@ -1,7 +1,7 @@
-import React from "react";
-import { usePage } from "@inertiajs/react";
+import { usePage } from '@inertiajs/inertia-react';
 
-function ProductDisplay() {
+const ProductDisplay = () => {
+    // Access the products data using the usePage hook
     const { products } = usePage().props;
 
     return (
@@ -12,12 +12,12 @@ function ProductDisplay() {
                     <li key={product.id}>
                         <h2>{product.name}</h2>
                         <p>{product.description}</p>
-                        <p>Price: ${product.price}</p>
+                        <p>€ {product.price}</p>
                     </li>
                 ))}
             </ul>
         </div>
     );
-}
+};
 
 export default ProductDisplay;
