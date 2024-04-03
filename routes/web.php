@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -15,20 +15,20 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/Welcome', function () {
-    return Inertia::render(('Welcome'));
+Route::get('/welcome', function () {
+    return Inertia::render(('welcome'));
 });
 
-Route::get('/Products', function () {
-    return Inertia::render(('Products'));
+Route::get('/products', function () {
+    return Inertia::render(('products'));
 });
 
-Route::get('/Contact', function () {
-    return Inertia::render(('Contact'));
+Route::get('/contact', function () {
+    return Inertia::render(('contact'));
 });
 
-Route::get('/AboutUs', function () {
-    return Inertia::render(('AboutUs'));
+Route::get('/aboutUs', function () {
+    return Inertia::render(('aboutUs'));
 });
 
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
