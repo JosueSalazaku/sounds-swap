@@ -97,11 +97,6 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             </div>
             <div className="flex flex-col items-center bg-white border border-lime-200 rounded-lg shadow mx-20 mb-10 md:flex-row md:max-w-full hover:bg-white dark:border-lime-200 dark:bg-lime-200 dark:hover:bg-lime-300">
-                <img
-                    className="object-cover m-5 rounded-t-lg  md:h-auto md:w-90 md:rounded-md md:rounded-s-lg"
-                    src={AudioEquipmentImage}
-                    alt=""
-                />
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <h3 className="mb-2 text-2-xl font-bold tracking-tight">
                         Audio Equipment
@@ -117,6 +112,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         Go to Audio Equipment
                     </button>
                 </div>
+                <img
+                    className="object-cover m-5 rounded-t-lg  md:h-auto md:w-90 md:rounded-md md:rounded-s-lg"
+                    src={AudioEquipmentImage}
+                    alt=""
+                />
             </div>
         </main>
     );
