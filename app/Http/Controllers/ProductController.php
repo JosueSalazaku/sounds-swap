@@ -17,9 +17,16 @@ class ProductController extends Controller
 
     public function lighting()
     {
-        $lighting = Products::where('category', 'Lighting')->get();
+        $lighting = Products::where('category_id', 1)->get();
 
         return Inertia::render('Lighting', ['products' => $lighting]);
+    }
+
+    public function mixing()
+    {
+        $mixing = Products::where('category_id', 2)->get();
+
+        return Inertia::render('MixingBoard', ['products' => $mixing]);
     }
 }
 

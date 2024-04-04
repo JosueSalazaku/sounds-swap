@@ -58,9 +58,7 @@ Route::get('/Microphones', function () {
     return Inertia::render(('Microphones'));
 });
 
-Route::get('/MixingBoard', function () {
-    return Inertia::render(('MixingBoard'));
-});
+Route::get('/MixingBoard', [ProductController::class, 'index'])->name('mixing');
 
 Route::get('/Monitors', function () {
     return Inertia::render(('Monitors'));
