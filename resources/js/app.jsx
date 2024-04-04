@@ -1,3 +1,6 @@
+// App.jsx
+import React from "react";
+import "./bootstrap";
 import "../css/app.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -14,6 +17,10 @@ import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
 import AboutUs from "./Pages/AboutUs";
 
+import Checkout from "./Pages/Checkout";
+import ProductDisplay from "./Components/ProductDisplay";
+
+const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
 createInertiaApp({
     resolve: (name) => {
@@ -21,6 +28,24 @@ createInertiaApp({
         return pages[`./Pages/${name}.jsx`];
     },
     setup({ el, App, props }) {
+        const AppRoutes = () => (
+            <Routes>
+                <Route exact path="/" element={<App {...props}/>} />
+                <Route path="/aboutUs" element={<AboutUs />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/Community" element={<Community />} />
+                <Route path="/SignUp" element={<SignUp />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/SignIn" element={<SignIn />} />
+                <Route path="/SignUp" element={<SignUp />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/CordCables" element={<CordCables />} />
+                <Route path="/SoundSystems" element={<SoundSystems />} />
+
+            </Routes>
+        );
+
         createRoot(el).render(
             <Router>
                 <Header />
@@ -50,4 +75,6 @@ createInertiaApp({
             <Page {...props} />
         </InertiaProvider>
     ),
+
+
 });

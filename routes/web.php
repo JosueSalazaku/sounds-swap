@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CheckoutController;
 use App\Models\Products;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -16,44 +17,48 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/Welcome', function () {
+Route::get('/welcome', function () {
     return Inertia::render(('Welcome'));
 });
 
 
 
 
-Route::get('/Contact', function () {
+Route::get('/contact', function () {
     return Inertia::render(('Contact'));
 });
 
-Route::get('/AboutUs', function () {
+Route::get('/aboutUs', function () {
     return Inertia::render(('AboutUs'));
 });
 
-Route::get('/Community', function () {
+
+
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
+
+Route::get('/community', function () {
     return Inertia::render(('Community'));
 });
 
-Route::get('/Pricing', function () {
+Route::get('/pricing', function () {
     return Inertia::render(('Pricing'));
 });
 
-Route::get('/SignIn', function () {
+Route::get('/signIn', function () {
     return Inertia::render(('SignIn'));
 });
 
-Route::get('/SignUp', function () {
+Route::get('/signUp', function () {
     return Inertia::render(('SignUp'));
 });
 
-Route::get('/Dashboard', function () {
+Route::get('/dashboard', function () {
     return Inertia::render(('Dashboard'));
 });
 
 Route::get('/Products', [ProductController::class, 'index'])->name('products');
 
-Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting');
+Route::get('/lighting', [ProductController::class, 'index'])->name('lighting');
 
 Route::get('/Microphones', [ProductController::class, 'index'])->name('Micro');
 
