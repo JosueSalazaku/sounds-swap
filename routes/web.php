@@ -59,9 +59,7 @@ Route::get('/MixingBoard', [ProductController::class, 'index'])->name('mixing');
 
 Route::get('/Monitors', [ProductController::class, 'index'])->name('monitors');
 
-Route::get('/CordCables', function () {
-    return Inertia::render(('CordCables'));
-});
+Route::get('/CordCables', [ProductController::class, 'index'])->name('cables');
 
 Route::get('/SoundSystems', [ProductController::class, 'index'])->name('sounds');
 
