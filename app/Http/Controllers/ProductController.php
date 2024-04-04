@@ -28,6 +28,13 @@ class ProductController extends Controller
 
         return Inertia::render('MixingBoard', ['products' => $mixing]);
     }
+
+    public function micro()
+    {
+        $micro = Products::where('category_id', 3)->get();
+
+        return Inertia::render('Microphones', ['products' => $micro]);
+    }
 }
 
 
