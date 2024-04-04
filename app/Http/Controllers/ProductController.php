@@ -35,6 +35,13 @@ class ProductController extends Controller
 
         return Inertia::render('Microphones', ['products' => $micro]);
     }
+
+    public function monitors()
+    {
+        $monitors = Products::where('category_id', 4)->get();
+
+        return Inertia::render('Microphones', ['products' => $monitors]);
+    }
 }
 
 
