@@ -40,7 +40,14 @@ class ProductController extends Controller
     {
         $monitors = Products::where('category_id', 4)->get();
 
-        return Inertia::render('Microphones', ['products' => $monitors]);
+        return Inertia::render('Monitors', ['products' => $monitors]);
+    }
+
+    public function sounds()
+    {
+        $sounds = Products::where('category_id', 5)->get();
+
+        return Inertia::render('SoundSystems', ['products' => $sounds]);
     }
 }
 
