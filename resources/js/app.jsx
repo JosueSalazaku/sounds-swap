@@ -22,13 +22,8 @@ import Microphones from "./Pages/Microphones";
 import Monitors from "./Pages/Monitors";
 import SoundSystems from "./Pages/SoundSystems";
 import CordCables from "./Pages/CordCables";
-import Prod from "./Pages/Prod";
 import Checkout from "./Pages/Checkout";
-
-import { createRoot } from "react-dom/client";
-import { createInertiaApp } from "@inertiajs/react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./Components/Footer";
+import ProductDisplay from "./Components/ProductDisplay";
 
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
@@ -41,7 +36,7 @@ createInertiaApp({
         const AppRoutes = () => (
             <Routes>
                 <Route exact path="/" element={<App {...props}/>} />
-                <Route path="/about" element={<AboutUs />} />
+                <Route path="/aboutUs" element={<AboutUs />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/Community" element={<Community />} />
@@ -71,4 +66,6 @@ createInertiaApp({
             <Page {...props} />
         </InertiaProvider>
     ),
+
+
 });

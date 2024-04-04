@@ -1,4 +1,5 @@
 import { usePage } from '@inertiajs/inertia-react';
+import React from "react";
 
 const ProductDisplay = () => {
     const { products } = usePage().props;
