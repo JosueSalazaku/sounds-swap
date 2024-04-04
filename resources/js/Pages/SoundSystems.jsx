@@ -4,7 +4,7 @@ import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
 function SoundSystems() {
-    const { sounds } = usePage().props; // Use lighting instead of products
+    const { sounds } = usePage().props;
     const [selectedItem, setSelectedItem] = useState(null);
 
     const handleItemClick = (item) => {
