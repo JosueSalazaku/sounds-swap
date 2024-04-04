@@ -1,5 +1,6 @@
 import React from "react";
 import dummyProductData from "../DummyData/ProductData.js";
+import AddToCartButton from "@/Components/AddToCartButton";
 
 export const ShowProductData = () => {
     return (
@@ -12,10 +13,10 @@ export const ShowProductData = () => {
                         <div key={index} className="flex flex-row gap-10">
                             {dummyProductData
                                 .slice(index, index + 4)
-                                .map((item) => (
+                                .map((item, innerIndex) => (
                                     <div
                                         key={item.id}
-                                        className="flex flex-col justify-center w-80 my-4 p-6  bg-secondary rounded-md"
+                                        className="flex flex-col justify-center w-80 my-4 p-6  bg-secondary rounded-md relative"
                                     >
                                         <div className="flex flex-row-reverse">
                                             <img
@@ -36,7 +37,12 @@ export const ShowProductData = () => {
                                         <p className="font-extrabold pl-8">
                                             €{item.price}
                                         </p>
+                                        {/* AddToCartButton positioned at bottom right */}
+                                        <div className="absolute bottom-0 right-0 mb-2 mr-2">
+                                            <AddToCartButton product={item} className="p-4" />
+                                        </div>
                                     </div>
+                                    
                                 ))}
                         </div>
                     ) : null // If the current index is not divisible by 4, don't render anything
