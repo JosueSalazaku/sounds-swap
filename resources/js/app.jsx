@@ -33,7 +33,7 @@ createInertiaApp({
             <Router>
                 <Header />
                 <Routes>
-                    <Route path="/Products" element={<App {...props} />} />
+                    <Route path="/Products" element={<Products {...props} />} />
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/SignIn" element={<SignIn />} />
                     <Route path="/Dashboard" element={<Dashboard />} />

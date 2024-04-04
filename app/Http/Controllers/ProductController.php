@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Products; 
+use App\Models\Products;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -17,11 +17,12 @@ class ProductController extends Controller
 
     public function lighting()
     {
-        $lighting = Products::where('category_id', 1)->get();
+        $lighting = Products::where('category', 'Lighting')->get();
 
         return Inertia::render('Lighting', ['products' => $lighting]);
     }
 }
+
 
 
 
