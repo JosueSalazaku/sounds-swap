@@ -3,8 +3,8 @@ import { usePage } from '@inertiajs/inertia-react';
 import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
-function MixingBoard() {
-    const { mixing } = usePage().props; // Use lighting instead of products
+function Microphones() {
+    const { micro } = usePage().props; // Use lighting instead of products
     const [selectedItem, setSelectedItem] = useState(null);
 
     const handleItemClick = (item) => {
@@ -15,10 +15,10 @@ function MixingBoard() {
         <main className="my-12 w-screen  flex flex-col justify-center items-center">
             <SearchBar />
             <OptionsButtons />
-            {mixing.map((item, index) =>
+            {micro.map((item, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
-                        {mixing.slice(index, index + 4).map((product) => ( // Fixed slice parameters
+                        {micro.slice(index, index + 4).map((product) => ( // Fixed slice parameters
                             <div
                                 key={product.id}
                                 className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"
@@ -75,4 +75,4 @@ function MixingBoard() {
     );
 }
 
-export default MixingBoard;
+export default Microphones;
