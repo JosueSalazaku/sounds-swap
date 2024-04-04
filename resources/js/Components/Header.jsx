@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <header className="flex flex-row justify-around space-x-20 font-semibold text-xl items-center bg-secondary py-4 border-b-2 border-primary font-sans">
-            <Link to="/Welcome">
+            <Link to="/">
                 <img
                     src="/images/SoundSwap_logo_3.png"
                     alt="logo"

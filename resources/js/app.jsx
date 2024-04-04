@@ -2,12 +2,9 @@ import "../css/app.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { createRoot } from "react-dom/client";
-import {
-    createInertiaApp,
-    InertiaProvider,
-} from "@inertiajs/inertia-react";
+import { createInertiaApp, InertiaProvider } from "@inertiajs/inertia-react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import Welcome from "./Pages/Welcome";
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
 import SignIn from "./Pages/SignIn";
@@ -33,7 +30,8 @@ createInertiaApp({
             <Router>
                 <Header />
                 <Routes>
-                    <Route path="/Products" element={<Products {...props} />} />
+                    <Route path="/" element={<Welcome />} />
+                    <Route path="/Products" element={<App {...props} />} />
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/SignIn" element={<SignIn />} />
                     <Route path="/Dashboard" element={<Dashboard />} />
@@ -41,7 +39,7 @@ createInertiaApp({
                     <Route path="/Pricing" element={<Pricing />} />
                     <Route path="/Community" element={<Community />} />
                     <Route path="/AboutUs" element={<AboutUs />} />
-                    <Route path="/Lighting" element={<App {...props} />}  />
+                    <Route path="/Lighting" element={<App {...props} />} />
                     <Route path="/MixingBoard" element={<MixingBoard />} />
                     <Route path="/Microphones" element={<Microphones />} />
                     <Route path="/Monitors" element={<Monitors />} />
@@ -58,4 +56,3 @@ createInertiaApp({
         </InertiaProvider>
     ),
 });
-
