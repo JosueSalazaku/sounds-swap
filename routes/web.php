@@ -63,9 +63,7 @@ Route::get('/CordCables', function () {
     return Inertia::render(('CordCables'));
 });
 
-Route::get('/SoundSystems', function () {
-    return Inertia::render(('SoundSystems'));
-});
+Route::get('/SoundSystems', [ProductController::class, 'index'])->name('sounds');
 
 
 require __DIR__.'/auth.php';
