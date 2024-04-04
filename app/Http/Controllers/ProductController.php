@@ -49,6 +49,13 @@ class ProductController extends Controller
 
         return Inertia::render('SoundSystems', ['products' => $sounds]);
     }
+
+    public function cables()
+    {
+        $cables = Products::where('category_id', 5)->get();
+
+        return Inertia::render('CordCables', ['products' => $cables]);
+    }
 }
 
 
