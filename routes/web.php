@@ -53,10 +53,7 @@ Route::get('/Dashboard', function () {
 
 Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting');
 
-
-Route::get('/Microphones', function () {
-    return Inertia::render(('Microphones'));
-});
+Route::get('/Microphones', [ProductController::class, 'index'])->name('Micro');
 
 Route::get('/MixingBoard', [ProductController::class, 'index'])->name('mixing');
 

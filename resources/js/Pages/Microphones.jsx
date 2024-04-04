@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { MicrophoneDumyData } from "@/DummyData/MicrophoneDumyData";
+import { usePage } from '@inertiajs/inertia-react';
 import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
-function Microphones() {
+function MixingBoard() {
+    const { mixing } = usePage().props; // Use lighting instead of products
     const [selectedItem, setSelectedItem] = useState(null);
 
     const handleItemClick = (item) => {
@@ -14,41 +15,38 @@ function Microphones() {
         <main className="my-12 w-screen  flex flex-col justify-center items-center">
             <SearchBar />
             <OptionsButtons />
-            {MicrophoneDumyData.map((Micro, index) =>
+            {mixing.map((item, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
-                        {MicrophoneDumyData.slice(index, index + 4).map(
-                            (item) => (
-                                <div
-                                    key={item.id}
-                                    className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"
-                                    
-                                >
-                                    <div className="flex flex-row-reverse">
-                                        <img
-                                            src="/images/favorite-bookmark-svgrepo-com.svg"
-                                            alt=""
-                                            className="h-8 w-9 active: fill-primary"
-                                        />
-                                    </div>
+                        {mixing.slice(index, index + 4).map((product) => ( // Fixed slice parameters
+                            <div
+                                key={product.id}
+                                className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"
+                            >
+                                <div className="flex flex-row-reverse">
                                     <img
-                                        src={item.image}
-                                        alt={item.name}
-                                        className="h-44 w-48 self-center mt-4"
-                                        onClick={() => handleItemClick(item)}
+                                        src="/images/favorite-bookmark-svgrepo-com.svg"
+                                        alt=""
+                                        className="h-8 w-9 active: fill-primary"
                                     />
-                                    <h3 className="font-bold m-2 pl-7">
-                                        {item.name}
-                                    </h3>
-                                    <p className="font-extrabold pl-8">
-                                        €{item.price}
-                                    </p>
-                                    <button className="bg-primary text-white font-bold rounded-lg h-10 w-20 my-3 self-end hover:bg-accent active:bg-primary">
-                                        Buy
-                                    </button>
                                 </div>
-                            )
-                        )}
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="h-44 w-48 self-center mt-4"
+                                    onClick={() => handleItemClick(product)}
+                                />
+                                <h3 className="font-bold m-2 pl-7">
+                                    {product.name}
+                                </h3>
+                                <p className="font-extrabold pl-8">
+                                    €{product.price}
+                                </p>
+                                <button className="bg-primary text-white font-bold rounded-lg h-10 w-20 my-3 self-end hover:bg-accent active:bg-primary">
+                                    Buy
+                                </button>
+                            </div>
+                        ))}
                     </div>
                 ) : null
             )}
@@ -77,4 +75,4 @@ function Microphones() {
     );
 }
 
-export default Microphones;
+export default MixingBoard;
