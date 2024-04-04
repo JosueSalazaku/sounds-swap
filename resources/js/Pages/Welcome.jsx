@@ -1,7 +1,10 @@
 import React from "react";
 import { Link, Head } from "@inertiajs/react";
+import CrowdHeroPic from "/public/images/CrowdHeroPic.png";
+import LightEquipmentImage from "/public/images/LightEquipmentImage.jpg";
+import AudioEquipmentImage from "/public/images/AudioEquipmentImage.jpg";
 
-export default function Welcome({ auth, laravelVersion, phpVersion }) {
+function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
         document
             .getElementById("screenshot-container")
@@ -29,3 +32,5 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         </main>
     );
 }
+
+export default Welcome;

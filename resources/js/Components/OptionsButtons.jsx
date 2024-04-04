@@ -8,11 +8,11 @@ function OptionsButtons() {
         { id: 3, label: "Microphones", link: "/Microphones" },
         { id: 4, label: "Monitors", link: "/Monitors" },
         { id: 5, label: "Sound Systems", link: "/SoundSystems" },
-        { id: 6, label: "Products", link: "/Prod" },
+        { id: 6, label: "Cords and Cables", link: "/CordCables" },
     ];
 
     return (
-        <div className="my-20">
+        <div className="my-12">
             <ul className="flex space-x-10">
                 {buttonData.map((button) => (
                     <li key={button.id}>

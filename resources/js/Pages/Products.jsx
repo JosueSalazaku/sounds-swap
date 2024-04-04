@@ -1,18 +1,22 @@
 import React from "react";
 import SearchBar from "@/Components/SearchBar";
 import OptionsButtons from "@/Components/OptionsButtons";
-import ShowProductData from "@/Components/ShowProductData";
+import ProductDisplay from "@/Components/ProductDisplay";
+
 
 function Products() {
+
     return (
-        <main className = "flex flex-col justify-start items-center">
-            {/* Searchbar*/}
+        <main
+            main
+            className="h-screen w-screen flex flex-col justify-start items-center"
+        >
             <SearchBar />
-            {/* options button components */}
             <OptionsButtons />
-            <ShowProductData />
+            <ProductDisplay />
         </main>
     );
 }
 
 export default Products;
+

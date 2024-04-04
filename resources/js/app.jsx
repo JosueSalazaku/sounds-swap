@@ -3,9 +3,15 @@ import React from "react";
 import "./bootstrap";
 import "../css/app.css";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import { createRoot } from "react-dom/client";
+import { createInertiaApp, InertiaProvider } from "@inertiajs/inertia-react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Welcome from "./Pages/Welcome";
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
 import SignIn from "./Pages/SignIn";
+import Dashboard from "./Pages/Dashboard";
 import SignUp from "./Pages/SignUp";
 import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
@@ -15,6 +21,7 @@ import MixingBoard from "./Pages/MixingBoard";
 import Microphones from "./Pages/Microphones";
 import Monitors from "./Pages/Monitors";
 import SoundSystems from "./Pages/SoundSystems";
+import CordCables from "./Pages/CordCables";
 import Prod from "./Pages/Prod";
 import Checkout from "./Pages/Checkout";
 
@@ -43,6 +50,9 @@ createInertiaApp({
                 <Route path="/SignIn" element={<SignIn />} />
                 <Route path="/SignUp" element={<SignUp />} />
                 <Route path="/checkout" element={<Checkout />} />
+                <Route path="/CordCables" element={<CordCables />} />
+                <Route path="/SoundSystems" element={<SoundSystems />} />
+
             </Routes>
         );
 
@@ -56,4 +66,9 @@ createInertiaApp({
             </Router>
         );
     },
+    render: ({ Page, props }) => (
+        <InertiaProvider initialPage={props}>
+            <Page {...props} />
+        </InertiaProvider>
+    ),
 });

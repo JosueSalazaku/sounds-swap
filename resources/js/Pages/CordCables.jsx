@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MonitorsDummyData from "@/DummyData/MonitorDummyData";
+import CordsCablesDummyData from "@/DummyData/CordsCablesDummyData";
 import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
@@ -14,19 +14,21 @@ function Monitors() {
         <main className="my-12 w-screen  flex flex-col justify-center items-center">
             <SearchBar />
             <OptionsButtons />
-            {MonitorsDummyData.map((Monitors, index) =>
+            {CordsCablesDummyData.map((Cords, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
-                        {MonitorsDummyData.slice(index, index + 4).map(
+                        {CordsCablesDummyData.slice(index, index + 4).map(
                             (item) => (
                                 <div
                                     key={item.id}
-                                    className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md">
+                                    className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"
+                                >
                                     <div className="flex flex-row-reverse">
                                         <img
                                             src="/images/favorite-bookmark-svgrepo-com.svg"
                                             alt=""
                                             className="h-8 w-9 active: fill-primary"
+                                            onClick={() => handleItemClick(item)}
                                         />
                                     </div>
                                     <img
@@ -34,6 +36,7 @@ function Monitors() {
                                         alt={item.name}
                                         className="h-44 w-48 self-center mt-4"
                                         onClick={() => handleItemClick(item)}
+
                                     />
                                     <h3 className="font-bold m-2 pl-7">
                                         {item.name}
