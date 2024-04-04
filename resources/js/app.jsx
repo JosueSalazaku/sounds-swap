@@ -4,7 +4,7 @@ import Footer from "./Components/Footer";
 import { createRoot } from "react-dom/client";
 import { createInertiaApp, InertiaProvider } from "@inertiajs/inertia-react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import Welcome from "./Pages/Welcome";
 import Products from "./Pages/Products";
 import Contact from "./Pages/Contact";
 import SignIn from "./Pages/SignIn";
@@ -30,8 +30,7 @@ createInertiaApp({
             <Router>
                 <Header />
                 <Routes>
-                    <Route exact path="/" element={<App {...props} />} />
-                    <Route path="/Products" element={<Products />} />
+                    <Route path="/Products" element={<App {...props} />} />
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/SignIn" element={<SignIn />} />
                     <Route path="/Dashboard" element={<Dashboard />} />
