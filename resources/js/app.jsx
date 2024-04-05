@@ -51,20 +51,21 @@ createInertiaApp({
                 <Header />
                 <Routes>
                     <Route exact path="/" element={<Welcome />} />
-                    <Route path="/Products" element={<App {...props} />} />
-                    <Route path="/Contact" element={<Contact />} />
-                    <Route path="/SignIn" element={<SignIn />} />
-                    <Route path="/Dashboard" element={<Dashboard />} />
-                    <Route path="/SignUp" element={<SignUp />} />
-                    <Route path="/Pricing" element={<Pricing />} />
-                    <Route path="/Community" element={<Community />} />
-                    <Route path="/AboutUs" element={<AboutUs />} />
-                    <Route path="/Lighting" element={<App {...props} />} />
-                    <Route path="/MixingBoard" element={<App {...props} />} />
-                    <Route path="/Microphones" element={<App {...props} />} />
-                    <Route path="/Monitors" element={<App {...props} />} />
-                    <Route path="/SoundSystems" element={<App {...props} />} />
-                    <Route path="/CordCables" element={<App {...props} />} />
+                    <Route path="/products" element={<App {...props} />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/signIn" element={<SignIn />} />
+                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/dignUp" element={<SignUp />} />
+                    <Route path="/pricing" element={<Pricing />} />
+                    <Route path="/community" element={<Community />} />
+                    <Route path="/aboutUs" element={<AboutUs />} />
+                    <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/lighting" element={<App {...props} />} />
+                    <Route path="/mixingBoard" element={<App {...props} />} />
+                    <Route path="/microphones" element={<App {...props} />} />
+                    <Route path="/monitors" element={<App {...props} />} />
+                    <Route path="/soundSystems" element={<App {...props} />} />
+                    <Route path="/cordCables" element={<App {...props} />} />
                 </Routes>
                 <Footer />
             </Router>
