@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LightingController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Products;
@@ -51,9 +52,12 @@ Route::get('/Dashboard', function () {
     return Inertia::render(('Dashboard'));
 });
 
-Route::get('/Products', [ProductController::class, 'index'])->name('products');
+Route::get('/Products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/Products/{product}', [ProductController::class, 'show'])->name('product.show');
+
 
 Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting');
+Route::get('/Lighting/{lighting}', [LightingController::class, 'show'])->name('lighting.show');
 
 Route::get('/Microphones', [ProductController::class, 'index'])->name('Micro');
 

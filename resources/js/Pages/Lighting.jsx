@@ -4,7 +4,7 @@ import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
 function Lighting() {
-    const { lighting } = usePage().props; // Use lighting instead of products
+    const { lighting } = usePage().props;
     const [selectedItem, setSelectedItem] = useState(null);
 
     const handleItemClick = (item) => {
