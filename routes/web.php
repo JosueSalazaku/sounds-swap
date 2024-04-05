@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\LightingController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CheckoutController;
 use App\Models\Products;
 use Illuminate\Foundation\Application;

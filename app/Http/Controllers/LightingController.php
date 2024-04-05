@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\Products;
 use Inertia\Inertia;
-use Illuminate\Http\Request;
 
 class LightingController extends Controller
 {
