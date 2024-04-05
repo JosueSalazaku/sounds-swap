@@ -71,3 +71,5 @@ const AboutUsContent = () => {
         </div>
     );
 };
+
+export default AboutUsContent;
