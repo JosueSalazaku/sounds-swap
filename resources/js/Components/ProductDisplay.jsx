@@ -1,12 +1,13 @@
+import React, { useState } from "react";
 import { usePage } from '@inertiajs/inertia-react';
-import React from "react";
 
 const ProductDisplay = () => {
     const { products } = usePage().props;
-
+    const [selectedItem, setSelectedItem] = useState(null);
+    console.log(products);
 
     const handleItemClick = (item) => {
-        // Handle item click logic here
+        setSelectedItem(item);
     };
 
     return (
