@@ -5,6 +5,11 @@ import ProductDisplay from "@/Components/ProductDisplay";
 //import AddToCartButton from "@/Components/AddToCartButton";
 
 function Products() {
+    const handleAddToCart = () => {
+        // Implement the logic to add the product to the cart here
+        console.log("Product added to cart!");
+    };
+
     return (
         <main className="h-screen w-screen flex flex-col justify-start items-center">
             <SearchBar />
