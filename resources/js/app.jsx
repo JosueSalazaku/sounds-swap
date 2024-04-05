@@ -13,6 +13,8 @@ import SignUp from "./Pages/SignUp";
 import Pricing from "./Pages/Pricing";
 import Community from "./Pages/Community";
 import AboutUs from "./Pages/AboutUs";
+import Checkout from "./Pages/Checkout";
+import Products from "./Pages/Products";
 
 createInertiaApp({
     resolve: (name) => {
@@ -27,6 +29,7 @@ createInertiaApp({
                     <Route exact path="/" element={<Welcome />} />
                     <Route path="/Products" element={<App {...props} />} />
                     <Route path="/Contact" element={<Contact />} />
+                    <Route path="/checkout" element={<Checkout />} />
                     <Route path="/SignIn" element={<SignIn />} />
                     <Route path="/Dashboard" element={<Dashboard />} />
                     <Route path="/SignUp" element={<SignUp />} />

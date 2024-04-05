@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CheckoutController;
 use App\Models\Products;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,7 @@ Route::get('/Welcome', function () {
 });
 
 
-
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 
 Route::get('/Contact', function () {
     return Inertia::render(('Contact'));
