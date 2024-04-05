@@ -53,6 +53,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/products', [ProductController::class, 'index'])->name('products');
 
+
 Route::get('/lighting', [ProductController::class, 'index'])->name('lighting');
 
 Route::get('/microphones', [ProductController::class, 'index'])->name('Micro');
