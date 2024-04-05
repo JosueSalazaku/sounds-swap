@@ -1,10 +1,9 @@
-import React from "react";
 import { Link, Head } from "@inertiajs/react";
 import CrowdHeroPic from "/public/images/CrowdHeroPic.png";
 import LightEquipmentImage from "/public/images/LightEquipmentImage.jpg";
 import AudioEquipmentImage from "/public/images/AudioEquipmentImage.jpg";
 
-function Welcome({ auth, laravelVersion, phpVersion }) {
+export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
         document
             .getElementById("screenshot-container")
@@ -18,15 +17,28 @@ function Welcome({ auth, laravelVersion, phpVersion }) {
 
     return (
         <main className="flex flex-col justify-start items-center">
-            <div className="h-screen w-screen flex flex-col justify-start items-center">
-                <h1 className="font-extrabold text-primary mt-12 font-sans text-7xl text-center">SoundSwap <br /> The Place To Buy Or Sell <br /> Audio Equipement </h1>
+            <div
+                className="bg-fixed pb-0 w-screen flex flex-col justify-start items-center"
+                style={{
+                    backgroundImage: `url(${CrowdHeroPic})`,
+                    height: "500px",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+            >
+                <h1 className="font-extrabold text-primary mt-12 font-sans text-7xl text-center">
+                    SoundSwap <br /> The Place To Buy Or Sell <br /> Audio
+                    Equipement{" "}
+                </h1>
                 <div className="mt-28 space-x-28">
-                <button className="h-12 w-40 text-white bg-primary">BUY</button>
-                <button className="h-12 w-40 text-white bg-primary">SELL</button>
-                </ div>
+                    <button className="px-12 bg-primary text-white p-2.5 rounded-lg focus:shadow-outline hover:bg-slate-800 font-semibold ">
+                        Brows Equipments
+                    </button>
+                    <button className="px-12 bg-primary text-white p-2.5 rounded-lg focus:shadow-outline hover:bg-slate-800 font-semibold">
+                        List Your Items!
+                    </button>
+                </div>
             </div>
-            <div className="h-screen w-screen" >
-                <h2 className="text-4xl font-bold">Why SoundSwap?</h2>
             <div className="h-screen text-center">
                 <h2 className="m-10 text-4xl font-bold text-left">
                     Why SoundSwap?
@@ -106,9 +118,6 @@ function Welcome({ auth, laravelVersion, phpVersion }) {
                     alt=""
                 />
             </div>
-
         </main>
     );
 }
-
-export default Welcome;
