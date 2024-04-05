@@ -11,7 +11,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Products::all();
-        return Inertia::render('products', ['products' => $products]);
+        return Inertia::render('Products', ['products' => $products]);
     }
 
     // public function lighting()

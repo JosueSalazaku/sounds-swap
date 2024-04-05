@@ -4,7 +4,7 @@ import OptionsButtons from "@/Components/OptionsButtons";
 import ProductDisplay from "@/Components/ProductDisplay";
 //import AddToCartButton from "@/Components/AddToCartButton";
 
-function products() {
+function Products() {
     return (
         <main className="h-screen w-screen flex flex-col justify-start items-center">
             <SearchBar />
@@ -15,4 +15,4 @@ function products() {
     );
 }
 
-export default products;
+export default Products;
