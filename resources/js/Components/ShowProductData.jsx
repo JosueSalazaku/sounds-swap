@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import dummyProductData from "../DummyData/ProductData.js";
+import AddToCartButton from "@/Components/AddToCartButton";
 
 function ShowProductData() {
     const [selectedItem, setSelectedItem] = useState(null);
@@ -17,11 +17,10 @@ function ShowProductData() {
                         <div key={index} className="flex flex-row gap-10">
                             {dummyProductData
                                 .slice(index, index + 4)
-                                .map((item) => (
+                                .map((item, innerIndex) => (
                                     <div
                                         key={item.id}
-                                        className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"
-
+                                        className="flex flex-col justify-center w-80 my-4 p-6  bg-secondary rounded-md relative"
                                     >
                                         
                                         <div className="flex flex-row-reverse">
@@ -46,10 +45,12 @@ function ShowProductData() {
                                         <p className="font-extrabold pl-8">
                                             €{item.price}
                                         </p>
-                                        <button className="bg-primary text-white font-bold rounded-lg h-10 w-20 my-3 self-end hover:bg-accent active:bg-primary">
-                                        Buy
-                                    </button>
+                                        {/* AddToCartButton positioned at bottom right */}
+                                        <div className="absolute bottom-0 right-0 mb-2 mr-2">
+                                            <AddToCartButton product={item} className="p-4" />
+                                        </div>
                                     </div>
+                                    
                                 ))}
                         </div>
                     ) : null

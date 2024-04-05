@@ -14,16 +14,16 @@ function Header() {
 
                 <ul className="flex flex-row gap-8">
                     <li>
-                        <Link to="/AboutUs">About Us</Link>
+                        <Link to="/aboutUs">About Us</Link>
                     </li>
                     <li>
-                        <Link to="/Products">Products</Link>
+                        <Link to="/products">Products</Link>
                     </li>
                     <li>
-                        <Link to="/Contact">Contact</Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link to="/Pricing">Pricing</Link>
+                        <Link to="/pricing">Pricing</Link>
                     </li>
                     <li>
                         <Link to="/Community">Community</Link>
