@@ -2,7 +2,7 @@ import React from "react";
 import SearchBar from "@/Components/SearchBar";
 import OptionsButtons from "@/Components/OptionsButtons";
 import ProductDisplay from "@/Components/ProductDisplay";
-import AddToCartButton from "@/Components/AddToCartButton";
+//import AddToCartButton from "@/Components/AddToCartButton";
 
 function Products() {
     const handleAddToCart = () => {
@@ -15,7 +15,7 @@ function Products() {
             <SearchBar />
             <OptionsButtons />
             <ProductDisplay />
-            <AddToCartButton onClick={handleAddToCart} />
+            {/*<AddToCartButton onClick={handleAddToCart} />*/}
         </main>
     );
 }
