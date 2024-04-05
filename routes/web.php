@@ -56,8 +56,7 @@ Route::get('/Dashboard', function () {
 Route::get('/Products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/Products/{product}', [ProductController::class, 'show'])->name('product.show');
 
-
-Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting');
+Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting.index');
 Route::get('/Lighting/{lighting}', [LightingController::class, 'show'])->name('lighting.show');
 
 Route::get('/Microphones', [ProductController::class, 'index'])->name('Micro');
