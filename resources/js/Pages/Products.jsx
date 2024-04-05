@@ -4,9 +4,7 @@ import OptionsButtons from "@/Components/OptionsButtons";
 import ProductDisplay from "@/Components/ProductDisplay";
 import AddToCartButton from "@/Components/AddToCartButton";
 
-
 function Products() {
-
     const handleAddToCart = () => {
         // Implement the logic to add the product to the cart here
         console.log("Product added to cart!");
@@ -23,4 +21,3 @@ function Products() {
 }
 
 export default Products;
-
