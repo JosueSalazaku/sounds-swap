@@ -1,3 +1,4 @@
+
 import { Link, Head } from "@inertiajs/react";
 import CrowdHeroPic from "/public/images/CrowdHeroPic.png";
 import LightEquipmentImage from "/public/images/LightEquipmentImage.jpg";
@@ -118,7 +119,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     alt=""
                 />
             </div>
+
         </main>
     );
 }
 
+export default Welcome;
