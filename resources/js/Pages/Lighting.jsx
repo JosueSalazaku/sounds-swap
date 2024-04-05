@@ -4,9 +4,8 @@ import OptionsButtons from "@/Components/OptionsButtons";
 import SearchBar from "@/Components/SearchBar";
 
 function Lighting() {
-    const { lighting } = usePage().props;
+    const { lighting } = usePage().props; // Use lighting instead of products
     const [selectedItem, setSelectedItem] = useState(null);
-
 
     const handleItemClick = (item) => {
         setSelectedItem(item);
@@ -19,7 +18,7 @@ function Lighting() {
             {lighting.map((item, index) =>
                 index % 4 === 0 ? (
                     <div key={index} className="flex flex-row gap-10">
-                        {lighting.slice(lights, index + 4).map((product) => (
+                        {lighting.slice(index, index + 4).map((product) => ( // Fixed slice parameters
                             <div
                                 key={product.id}
                                 className="flex flex-col justify-center w-80 my-4 p-6 bg-secondary rounded-md"

@@ -21,7 +21,7 @@ Route::get('/Welcome', function () {
 });
 
 
-Route::get('/Products', [ProductController::class, 'index'])->name('products');
+
 
 Route::get('/Contact', function () {
     return Inertia::render(('Contact'));
@@ -51,28 +51,18 @@ Route::get('/Dashboard', function () {
     return Inertia::render(('Dashboard'));
 });
 
+Route::get('/Products', [ProductController::class, 'index'])->name('products');
 
 Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting');
 
+Route::get('/Microphones', [ProductController::class, 'index'])->name('Micro');
 
-Route::get('/Microphones', function () {
-    return Inertia::render(('Microphones'));
-});
+Route::get('/MixingBoard', [ProductController::class, 'index'])->name('mixing');
 
-Route::get('/MixingBoard', function () {
-    return Inertia::render(('MixingBoard'));
-});
+Route::get('/Monitors', [ProductController::class, 'index'])->name('monitors');
 
-Route::get('/Monitors', function () {
-    return Inertia::render(('Monitors'));
-});
+Route::get('/CordCables', [ProductController::class, 'index'])->name('cables');
 
-Route::get('/CordCables', function () {
-    return Inertia::render(('CordCables'));
-});
-
-Route::get('/SoundSystems', function () {
-    return Inertia::render(('SoundSystems'));
-});
+Route::get('/SoundSystems', [ProductController::class, 'index'])->name('sounds');
 
 require __DIR__.'/auth.php';
