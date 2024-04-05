@@ -4,11 +4,10 @@ import OptionsButtons from "@/Components/OptionsButtons";
 import ProductDisplay from "@/Components/ProductDisplay";
 
 
-function Products() {
+function products() {
 
     return (
         <main
-            main
             className="h-screen w-screen flex flex-col justify-start items-center"
         >
             <SearchBar />
@@ -18,5 +17,5 @@ function Products() {
     );
 }
 
-export default Products;
+export default products;
 
