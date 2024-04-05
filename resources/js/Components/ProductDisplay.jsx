@@ -4,6 +4,7 @@ import React from "react";
 const ProductDisplay = () => {
     const { products } = usePage().props;
 
+
     const handleItemClick = (item) => {
         // Handle item click logic here
     };

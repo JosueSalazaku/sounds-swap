@@ -14,47 +14,47 @@ class ProductController extends Controller
         return Inertia::render('Products', ['products' => $products]);
     }
 
-    public function lighting()
-    {
-        $lighting = Products::where('category_id', 1)->get();
+    // public function lighting()
+    // {
+    //     $lighting = Products::where('category_id', 1)->get();
 
-        return Inertia::render('Lighting', ['products' => $lighting]);
-    }
+    //     return Inertia::render('Lighting', ['products' => $lighting]);
+    // }
 
-    public function mixing()
-    {
-        $mixing = Products::where('category_id', 2)->get();
+    // public function mixing()
+    // {
+    //     $mixing = Products::where('category_id', 2)->get();
 
-        return Inertia::render('MixingBoard', ['products' => $mixing]);
-    }
+    //     return Inertia::render('MixingBoard', ['products' => $mixing]);
+    // }
 
-    public function micro()
-    {
-        $micro = Products::where('category_id', 3)->get();
+    // public function micro()
+    // {
+    //     $micro = Products::where('category_id', 3)->get();
 
-        return Inertia::render('Microphones', ['products' => $micro]);
-    }
+    //     return Inertia::render('Microphones', ['products' => $micro]);
+    // }
 
-    public function monitors()
-    {
-        $monitors = Products::where('category_id', 4)->get();
+    // public function monitors()
+    // {
+    //     $monitors = Products::where('category_id', 4)->get();
 
-        return Inertia::render('Monitors', ['products' => $monitors]);
-    }
+    //     return Inertia::render('Monitors', ['products' => $monitors]);
+    // }
 
-    public function sounds()
-    {
-        $sounds = Products::where('category_id', 5)->get();
+    // public function sounds()
+    // {
+    //     $sounds = Products::where('category_id', 5)->get();
 
-        return Inertia::render('SoundSystems', ['products' => $sounds]);
-    }
+    //     return Inertia::render('SoundSystems', ['products' => $sounds]);
+    // }
 
-    public function cables()
-    {
-        $cables = Products::where('category_id', 5)->get();
+    // public function cables()
+    // {
+    //     $cables = Products::where('category_id', 5)->get();
 
-        return Inertia::render('CordCables', ['products' => $cables]);
-    }
+    //     return Inertia::render('CordCables', ['products' => $cables]);
+    // }
 }
 
 

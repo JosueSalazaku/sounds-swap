@@ -17,52 +17,53 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/welcome', function () {
+Route::get('/Welcome', function () {
     return Inertia::render(('Welcome'));
 });
 
-Route::get('/contact', function () {
-    return Inertia::render(('Contact'));
-});
-
-Route::get('/aboutUs', function () {
-    return Inertia::render(('AboutUs'));
-});
 
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 
-Route::get('/community', function () {
+Route::get('/Contact', function () {
+    return Inertia::render(('Contact'));
+});
+
+Route::get('/AboutUs', function () {
+    return Inertia::render(('AboutUs'));
+});
+
+Route::get('/Community', function () {
     return Inertia::render(('Community'));
 });
 
-Route::get('/pricing', function () {
+Route::get('/Pricing', function () {
     return Inertia::render(('Pricing'));
 });
 
-Route::get('/signIn', function () {
+Route::get('/SignIn', function () {
     return Inertia::render(('SignIn'));
 });
 
-Route::get('/signUp', function () {
+Route::get('/SignUp', function () {
     return Inertia::render(('SignUp'));
 });
 
-Route::get('/dashboard', function () {
+Route::get('/Dashboard', function () {
     return Inertia::render(('Dashboard'));
 });
 
-Route::get('/products', [ProductController::class, 'index'])->name('products');
+Route::get('/Products', [ProductController::class, 'index'])->name('products');
 
-Route::get('/lighting', [ProductController::class, 'index'])->name('lighting');
+Route::get('/Lighting', [ProductController::class, 'index'])->name('lighting');
 
-Route::get('/microphones', [ProductController::class, 'index'])->name('Micro');
+Route::get('/Microphones', [ProductController::class, 'index'])->name('Micro');
 
-Route::get('/mixingBoard', [ProductController::class, 'index'])->name('mixing');
+Route::get('/MixingBoard', [ProductController::class, 'index'])->name('mixing');
 
-Route::get('/monitors', [ProductController::class, 'index'])->name('monitors');
+Route::get('/Monitors', [ProductController::class, 'index'])->name('monitors');
 
-Route::get('/cordCables', [ProductController::class, 'index'])->name('cables');
+Route::get('/CordCables', [ProductController::class, 'index'])->name('cables');
 
-Route::get('/soundSystems', [ProductController::class, 'index'])->name('sounds');
+Route::get('/SoundSystems', [ProductController::class, 'index'])->name('sounds');
 
 require __DIR__.'/auth.php';

@@ -1,5 +1,4 @@
 import CartSummary from "@/Components/CartSummary";
-import dummyProductData from "../DummyData/ProductData.js";
 
 function Checkout() {
 
