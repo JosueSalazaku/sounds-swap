@@ -4,7 +4,12 @@ function CartSummary({ productData }) {
     // Check if productData is undefined or not an array
     if (!productData || !Array.isArray(productData)) {
         // Return null or any other fallback UI if productData is not valid
-        return null;
+        return (
+            <div className="text-center m-4">
+                <h2 class="mb-4">Cart Summary</h2>
+                <p class="mb-4">Your shopping cart is currently empty...</p>
+            </div>
+        );
     }
 
     const cartItems = calculateCartItems(productData);
