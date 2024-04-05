@@ -7,13 +7,11 @@ import ProductDisplay from "@/Components/ProductDisplay";
 
 function Products() {
 
-    const handleAddToCart = () => {
-        // Implement the logic to add the product to the cart here
-        console.log("Product added to cart!");
-    };
-
     return (
-        <main className="h-screen w-screen flex flex-col justify-start items-center">
+        <main
+            main
+            className="h-screen w-screen flex flex-col justify-start items-center"
+        >
             <SearchBar />
             <OptionsButtons />
             <ProductDisplay />
@@ -22,5 +20,5 @@ function Products() {
     );
 }
 
-export default Products;
+export default products;
 
